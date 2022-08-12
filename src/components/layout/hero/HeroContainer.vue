@@ -17,7 +17,7 @@
         {{ description }}
       </p>
     </div>
-<a href="/"><button data-aos="zoom-in"  data-aos-delay="300"  class="hero-btn">Virtual Resume  </button></a>
+<a href="https://sergiovirtualresume.netlify.app"><button data-aos="zoom-in"  data-aos-delay="300"  class="hero-btn">Virtual Resume  </button></a>
     
   </div>
 </template>
