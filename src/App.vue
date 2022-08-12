@@ -7,7 +7,7 @@
     <div class="bg2" v-if="!isLoading" >
       <TheNavbar></TheNavbar>
           <TheHero></TheHero>
-        <!-- <TheAbout></TheAbout> -->
+        <TheAbout></TheAbout>
         <TheSkills></TheSkills>
         <Projects></Projects>
         <Contact></Contact> 
@@ -21,11 +21,11 @@
 <script>
 import TheNavbar from "./components/ui/TheNavbar.vue";
 import TheHero from "./components/views/TheHero.vue";
-// import TheAbout from "./components/views/TheAbout.vue";
-// import TheSkills from "./components/views/TheSkills.vue";
+import TheAbout from "./components/views/TheAbout.vue";
+import TheSkills from "./components/views/TheSkills.vue";
 
-// import Contact from "./components/views/Contact.vue"
-// import Projects from "./components/views/TheProjects.vue"
+import Contact from "./components/views/Contact.vue"
+import Projects from "./components/views/TheProjects.vue"
 
 
 export default {
@@ -34,10 +34,10 @@ export default {
     components: {
         TheNavbar,
         TheHero,
-        // TheAbout,
-        // TheSkills,
-        // Projects,
-        // Contact,
+        TheAbout,
+        TheSkills,
+        Projects,
+        Contact,
 
 
 
