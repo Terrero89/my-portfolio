@@ -154,19 +154,28 @@ export default {
 .expertise-section .expertise-header {
     font-size: 2.5rem;
 }
-/* needs background gradiant on hover */
-.expertise-box {
-    /* border: solid rgb(99, 225, 241) 1px; */
 
+.expertise-box {
     margin: 3.5rem 0rem;
     border-radius: 10px;
     padding: 1rem 2rem;
-    /* width: 45rem; */
-    /* background-color: rgb(17, 24, 63, 0.5) */
-    background-color: #041731;
+
+    /* background-color: #041731; */
     background-color: #01152e;
 }
 
+.expertise-box:nth-child(1):hover {
+  
+
+  transition: .4s;
+    box-shadow:  2px 0px 15px 8px rgb(77, 84, 128,0.5)
+}
+
+.expertise-box:nth-child(2):hover {
+  
+     transition: .4s;
+    box-shadow: 2px 0px 15px 8px  rgb(146, 168, 22,0.5)
+}
 
 
 
@@ -186,7 +195,7 @@ export default {
     text-decoration: none;
     list-style: none;
 
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .expertise-box ul li {
@@ -224,16 +233,7 @@ export default {
 
 /* expertise individually */
 
-#skills>h3 {
-    font-size: 4rem;
-
-    color: #2e4c6d;
-    font-weight: 600;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    line-height: 4rem;
-    margin: 5rem 0 15rem 0;
-}
+/*  */
 
 .technologies {
 
@@ -279,7 +279,8 @@ export default {
 
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 580px) {
 
 
     .icons-wrapper {
@@ -290,7 +291,27 @@ export default {
 
     .skill-box{
 
-    max-width: 90%;
+    max-width: 85%;
+
+}
+
+.expertise-box {
+    margin: 5rem 0 0 0 ;
+}
+}
+
+@media only screen and (max-width: 768px) and (min-width:581px){
+
+
+    .icons-wrapper {
+        margin: 0 0 10rem 0;
+
+
+    }
+
+    .skill-box{
+
+    max-width: 70%;
 
 }
 

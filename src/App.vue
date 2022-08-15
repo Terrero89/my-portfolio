@@ -11,7 +11,7 @@
         <TheSkills></TheSkills>
         <Projects></Projects>
         <Contact></Contact> 
-        <h3>under construction</h3>
+     
     </div>
 
 
@@ -46,7 +46,7 @@ export default {
 
     data() {
         return {
-            isLoading: true,
+            isLoading: false,
         }
     },
 
@@ -58,7 +58,9 @@ export default {
                 // setTimeout(() => {
                 //     this.isLoading = false;
                 // }, 3000);
-                 this.isLoading = false;
+                //  this.isLoading = true;
+
+                this.isLoading = false; //temporary
             }
         };
     },
@@ -83,7 +85,7 @@ export default {
     10%{opacity: 0; background-color:rgb(255, 255, 255); transition:0.4s ease-in-out}
     10%{opacity: 0; background-color:rgb(255, 255, 255) ;transition:0.4s ease-in-out}
     90%{opacity: 1;background-color:rgb(255, 255, 255,0.6); transition:0.4s ease-in-out; }
-    
+     100%{opacity: 0;background-color:rgb(255, 255, 255,0.6); transition:0.4s ease-in-out; }
 }
 
 * {

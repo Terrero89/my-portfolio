@@ -17,7 +17,7 @@
 <style scoped>
 
 .soc-icon {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     margin: 1rem 1rem;
     list-style: none;
     text-decoration: none;

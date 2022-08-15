@@ -1,26 +1,23 @@
 <template>
     <div>
-        <div 
-        
-        class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
-            data-aos-offset="0"     >
+        <div class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+            data-aos-offset="0">
 
-            <div class="image-container" 
-               uk-parallax="target: #hero-img; start: 100%; end: -10%; y: -280; easing: 3; opacity: 1,0,0,0;"
-                >
-                <img :src="link"
-                    class="project-image" alt="project-img"   >
+            <div class="image-container"
+                uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;">
+                <img :src="link" class="project-image" alt="project-img">
 
             </div>
 
-            <div class="project-text" uk-parallax="target: #hero-img; start: 100%; end: 10%; y: -250; easing: 3; opacity: 1,0,0,0;">
+            <div class="project-text"
+                uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;">
                 <h3> {{ name }}</h3>
                 <p> {{ description }}</p>
 
                 <div class="tech-section">
                     <ul class="techs" v-for="stack in stacks" :key="stack.name">
                         <li>{{ stack }}</li>
-                            
+
 
                     </ul>
 
@@ -45,7 +42,7 @@
 <script>
 
 export default {
-    props: ["projects",'name', 'description', 'link', 'stacks', 'web', 'github'],
+    props: ["projects", 'name', 'description', 'link', 'stacks', 'web', 'github'],
 
     data() {
         return {
@@ -55,7 +52,7 @@ export default {
         }
     },
 
- 
+
 }
 </script>
 
@@ -70,17 +67,6 @@ export default {
     letter-spacing: 0.15rem
 }
 
-.techs li{
-    margin: 1rem 0;
-}
-
-
-.tech-section {
-
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .buttons {
     display: inline-block;
@@ -97,8 +83,8 @@ export default {
 
 
 
-.btn-regular{
-   padding: 11px 30px;
+.btn-regular {
+    padding: 11px 30px;
     background: none;
 
     border: solid 1px #2e4c6d;
@@ -109,14 +95,15 @@ export default {
 }
 
 .btn-regular:hover {
-   
-      background:#00657e;
+
+    background: #00657e;
     transition: .5s ease-in;
 
 }
+
 .btn-fill {
-   padding: 11px 30px;
-    background:#00657e;
+    padding: 11px 30px;
+    background: #00657e;
 
     border: solid 1px #2e4c6d;
 
@@ -124,28 +111,23 @@ export default {
     font-size: 1.5rem;
     border-radius: 5px;
 }
+
 .btn-fill:hover {
-    background: #46a0b6;;
+    background: #46a0b6;
+    ;
     color: rgb(80, 78, 78);
     transition: 0.6s ease-in-out;
 }
+
 /* button hover */
 
-
-
-
-
-
-
-
-
-
 .btn-fill:hover {
-    
+
     color: #01161b;
     transition: 600ms ease-in-out;
-    
+
 }
+
 /* btn anchor tag styles */
 button a:hover {
     color: rgba(3, 19, 73, 0.8);
@@ -158,13 +140,6 @@ button a {
 }
 
 
-
-/* .btn-fill:hover {
-    color: rgb(255, 255, 255, 0.8)
-} */
-
-
-
 .buttons button :hover {
     color: rgb(255, 255, 255);
     transition: 600ms ease-in-out;
@@ -174,15 +149,14 @@ button a {
 
 
 .project-container {
-    /* border-bottom: 0.5px solid rgb(163, 255, 220, 0.5); */
+   max-width: 1700px;
+
     overflow: hidden;
-      background-color: #01152e;
- 
-   opacity: 0.5;
-    /* box-shadow: 5px 5px 32px 5px rgb(1, 24, 39); */
+    background-color: #01152e;
+    opacity: 0.5;
     padding: 2rem 0;
-    width: 75%;
-    margin:8rem auto;
+ 
+    margin: 8rem auto;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -197,69 +171,129 @@ button a {
 }
 
 .project-text {
+     /* border: solid 1px blue; */
+    flex: 1 1 30rem;
+   width: 50rem;
 
-    width: 35%;
-    padding: 0 2rem;
-    align-self: center;
-    /*background-color: rgb(9, 211, 194, 0.8);*/
-    /*background-color: rgb(255, 255, 255, 0.9);*/
+    padding: 0 1rem;
+    margin: 0 5rem;
+    
     border-radius: 5px;
 }
 
 .project-text h3 {
-
+    /* width: 70%; */
     font-size: 3rem;
-   /* color: #5EE3F2; */
-   color: rgb(255, 244, 255);
-  
-    margin: 2rem 0;
-   
-    /* letter-spacing: 0.1rem; */
 
-    /* font-family: "Roboto Slab", serif; */
+    color: rgb(255, 244, 255);
+
+    margin: 2rem 0;
+    /* border: solid red 1px; */
 }
 
 .project-text p {
+    max-width:85%;
     font-size: 1.4rem;
     margin: 2rem 0 2.5rem 0;
     line-height: 2.3rem;
-    margin: 2rem 0;
-     color: rgb(255, 244, 255, 0.8);
     
+    color: rgb(255, 244, 255, 0.8);
+    /* border: solid red 1px; */
+
+}
+
+.techs li {
+
+    margin: 1rem 0;
+}
+
+
+.tech-section {
+ /* border: solid 1px rgb(42, 151, 15); */
+ max-width:90%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 
 .image-container {
-
-    width: 40rem;
-    height: auto;
+   flex: 1 1 28rem;
+    max-width: 40rem;
+    height: 30rem;
+margin: 0 5rem;
+   
+    /* border: solid red 1px; */
+    align-self: center;
 }
 
 .project-image {
-      
-    border-radius: 20px;
+
+    border-radius: 5px;
     width: 100%;
     height: 100%;
-    object-fit: contain
+    object-fit: cover;
+
+
+
+
+
+
 }
 
+@media only screen and (max-width: 480px) and (min-width: 767px) {
+   .project-text {
+       max-width:90%
+       
+
+    }
+
+}
 
 @media only screen and (max-width: 768px) {
- 
-.image-container {
-    margin-top: 4rem;
-    width: 40rem;
-    height: auto;
+   .project-text {
+        /* background-color: red; */
+        border: solid red 1px;
+        max-width:40rem;
+        
+       
+
+    }
+
+@media only screen and (min-width: 1300px) {
+   .project-text {
+        margin: 2rem 0 0 0;
+        max-width:60rem;
+border: solid red 1px;
+    }
+}
+
+
+
+
+   .project-container {
+        width: 85%;
+    }
+
+        .project-text p {
+    width:100%;
+border: solid red 1px;
+    
+
+
 }
 }
 
-@media only screen and (max-width: 390px) and (min-width: 449) {
+
+
+
+/* @media only screen and (max-width: 390px) and (min-width: 449) {
     .project-container {
         width: 95%;
     }
 
     .project-text {
-        /* background-color: red; */
+        background-color: red;
         width: 100%;
 
     }
@@ -271,8 +305,8 @@ button a {
     }
 
     .project-text {
-        /* background-color: red; */
-        width: 40rem;
+        background-color: red;
+  
 
     }
 }
@@ -283,49 +317,14 @@ button a {
     }
 
     .project-text {
-        /* background-color: rgb(74, 233, 0); */
-        width: 45rem;
+        background-color: rgb(52, 92, 34);
+        
 
     }
-}
+} */
 
-@media only screen and (max-width: 580px) {
-    .project-container {
-        width: 95%;
-    }
 
-    .project-text {
-        /* background-color: rgb(25, 0, 255); */
-        width: 40rem;
 
-    }
-}
 
-@media only screen and (max-width: 821px) and (min-width: 581px) {
-    .project-container {
-        width: 80%;
-    }
 
-    .project-text {
-        /* background-color: rgb(255, 0, 106); */
-        width: 40rem;
-
-    }
-
-}
-
-@media only screen and (max-width: 821px) {
-    .project-container {
-        width: 90%;
-    }
-
-    .project-text {
-        /* background-color: rgb(255, 0, 106); */
-        width: 40rem;
-        margin-top: 2.5rem;
-
-    }
-
- 
-}
 </style>

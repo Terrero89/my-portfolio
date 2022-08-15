@@ -114,11 +114,9 @@ export default {
 }
 
 .hero-btn {
-  padding: 15px 30px;
+  padding: 16px 29px;
   background: none;
-
   border: solid 1px #2e4c6d;
-
   margin: 3rem 0;
   font-size: 1.5rem;
   border-radius: 5px;
@@ -138,7 +136,7 @@ list-style: none;
   /* background: #46a0b6; */
   background: #46a0b6;;
   color: white;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 
 /*Media queries for hero section*/
@@ -182,15 +180,21 @@ list-style: none;
     margin: 10rem 0;
     padding: 0 2rem;
 
-    width: 90%;
+    width: 98%;
   }
 
+ .hero-text h2 {
+    font-size: 3.4rem;
+    width: 100%;
+    margin: 2.5rem auto;
+  }
   .hero-text h3 {
     /* color: #000000; */
     font-size: 5rem;
 
     letter-spacing: 0.4rem;
   }
+  
 
   .hero-text p {
     font-weight: 500;
@@ -234,9 +238,9 @@ list-style: none;
 @media only screen and (max-width: 648px) {
   .hero-content {
     margin: 10rem 0;
-    padding: 0 2.5rem;
+   
     
-    width: 90%;
+    /* width: 90%; */
   }
 
   .hero-text h3 {
@@ -285,7 +289,7 @@ list-style: none;
   }
 
   .hero-btn {
-    padding: 10px 20px;
+    padding: 16px 20px;
   }
 }
 
@@ -301,7 +305,7 @@ list-style: none;
   }
 
   .hero-text h2 {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
 
   .hero-text p {

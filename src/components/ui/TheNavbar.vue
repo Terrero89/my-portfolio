@@ -84,6 +84,7 @@ export default {
 
 <style scoped>
 .navbar {
+    height:8rem;
     position: fixed;
     width: 100%;
     top: 0;

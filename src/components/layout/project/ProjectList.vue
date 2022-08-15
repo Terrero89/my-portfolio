@@ -4,10 +4,12 @@
     <ProjectItems v-for="project in projects"
      :key="project.name" :name="project.name"
         :description="project.description" 
-        :link="project.link" 
+        :link="project.link"
         :stacks="project.stack" 
         :github="project.github"
         :web="project.website" />
+
+  
 
 </template>
 
@@ -22,21 +24,23 @@ export default {
     data() {
         return {
 
+            linking: require,
+
             projects: [
                 {
                     name: 'Find a Mentor',
-                    link: 'https://cdn-ecbjf.nitrocdn.com/trFSLbdBEIFWvubMBbeHotqYSOVJJYEv/assets/static/optimized/rev-a53dc1f/blog/wp-content/uploads/2020/02/40-BEST-WEBSITE-DESIGNS-2022.jpg',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veritatis obcaecati pariatur odio porroullam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo beatae repellat.',
-                    stack: ["Vue JS", "Vuex", "Firebase", "Vue Router"],
+                    link: require('../../../assets/images/FindAMentorApp.png'),
+                    description: 'Web application built using Vue js ecosystem. This application allows to sign up, display information about types of services offered and allow users to send messages to the mentor listed in our system for hiring or coaching.',
+                    stack: ["Vue JS", "Vuex", "Vue Router", "Firebase", "jwt"],
                     github: 'https://github.com/Terrero89/Find_a_mentor_project',
-                    website: 'https://find-mentor-project.web.app/coaches',
+                    website: 'https://find-mentor-project.web.app',
                 },
 
                 {
-                    name: 'Phoenix Financial Advisors',
-                    link: 'https://miro.medium.com/max/600/0*npRqA-IodJWs4jae.jpg',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veritatis obcaecati pariatur odio porroullam excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo beatae repellat.',
-                    stack: ["Vue JS", "Nuxtjs", "Firebase", "Sass"],
+                    name: 'My Web blog',
+                    link: require('../../../assets/images/MyBlogWebApp' + ".png"),
+                    description: 'Personal Blog where I intend to post different articles and posts about technology, and other topics. This web app also allows users to sign up, sign in, as well as post articles and blogs of their preference. The ideas was to allow users to interact with others user through the blog as well.',
+                    stack: ["Vue JS", "Nuxtjs", "Firebase", "Axios", "Vuex", "Jwt", "Cookies"],
                     github: 'http://www.phoenixfinancial.co/',
                     website: 'http://www.phoenixfinancial.co/'
                 },
@@ -47,6 +51,15 @@ export default {
 
         }
     },
+
+    // computed:{
+    //     urlImage(){
+    //         if(this.projects.link !== ''){
+    //             return require(`@/assets/images/${}`)
+    //         }
+    //     }
+        
+    // }
 
  
 

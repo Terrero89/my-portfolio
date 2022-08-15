@@ -6,7 +6,7 @@
 
 
             <section-titles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80"
-                data-aos-offset="0" :style="{ margin: '7rem 0 1.5rem 0' }" title="Get in touch" />
+                data-aos-offset="0" :style="{ margin: '7rem 0 0rem 0' }" title="Get in touch" />
             <div class="section-wrapper">
 
 

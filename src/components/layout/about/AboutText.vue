@@ -4,7 +4,9 @@
 
 
     <div class="about-text" 
-    uk-parallax="target: #hero-img; start: 90%; end: 30%; y: -150; easing: 3; blur: 1; blue: 5;"
+    
+     data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            data-aos-offset="200"
     
             >
 
@@ -16,20 +18,18 @@
         <p >
             Hello again! My name is Sergio Terrero, Im a <span>Front-end developer  </span>
              located in Massachusetts. My passion for programming started when I took a C class in 
-             college back in 2019. Started watching some tutorials and building basic Websites
-              with HTML, and CSS, as well as some small C projects for the school.  
+             college back in 2019. Started to build basic Websites
+              with HTML, and CSS, and Javascript as well as some small C projects for the school.  
         </p>
 
         <p >
             I have background in Industrial Enginnering  from 
             <span><a href="https://www.utesa.edu/home/">Santiago University of Technology</a> </span> 
             I am currently in my senior year in  <span>Information Technology</span> at <span><a href="https://uml.umassonline.net/">University Of Massachusetts Lowell.</a> </span>
-         I Like to create accessible, performant websites and web applications with the main focus on SEO optimization.
+            I Like to create accessible, performant websites and web applications with the main focus on UI and SEO optimization.
            
         </p>
-        <p >
-          I really enjoy traveling, hiking, camping, and road trips, specially during the summer. If you ever have a question reach out and i will be more than happy to help.
-        </p>
+       
     </div>
 </template>
 
