@@ -1,5 +1,36 @@
 <template>
     <div>
+        <!-- <div class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+            data-aos-offset="0">
+
+            <div class="image-container"
+                uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;">
+                <img :src="link" class="project-image" alt="project-img">
+
+            </div>
+
+            <div class="project-text"
+                uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;">
+                <h3> {{ name }}</h3>
+                <p> {{ description }}</p>
+
+                <div class="tech-section">
+                    <ul class="techs" v-for="stack in stacks" :key="stack.name">
+                        <li>{{ stack }}</li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="buttons">
+                    <button class="btn-regular"> <a :href="web"> Website</a></button>
+                    <button class="btn-fill"> <a :href="github"> Github</a> </button>
+                </div>
+            </div>
+
+        </div> -->
+
         <div class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
             data-aos-offset="0">
 
@@ -218,12 +249,14 @@ button a {
 
 
 .image-container {
+    width: 100;
+    height: 100%;
    flex: 1 1 28rem;
     max-width: 40rem;
     height: 30rem;
 margin: 0 5rem;
    
-    /* border: solid red 1px; */
+  
     align-self: center;
 }
 
@@ -253,7 +286,7 @@ margin: 0 5rem;
 @media only screen and (max-width: 768px) {
    .project-text {
         /* background-color: red; */
-        border: solid red 1px;
+        /* border: solid red 1px; */
         max-width:40rem;
         
        
@@ -264,7 +297,7 @@ margin: 0 5rem;
    .project-text {
         margin: 2rem 0 0 0;
         max-width:60rem;
-border: solid red 1px;
+/* border: solid red 1px; */
     }
 }
 
@@ -277,7 +310,7 @@ border: solid red 1px;
 
         .project-text p {
     width:100%;
-border: solid red 1px;
+/* border: solid red 1px; */
     
 
 

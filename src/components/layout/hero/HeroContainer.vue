@@ -1,24 +1,23 @@
 <template>
-  <div
-    class="hero-content"
-    uk-parallax="target: #hero-img; start: 90%; end: 30%; y: -450; easing: 5;"
-  >
+  <div class="hero-content" uk-parallax="target: #hero-img; start: 90%; end: 30%; y: -450; easing: 5;">
     <div class="hero-text">
       <span>Hi there, I'm</span>
-      <h3 data-aos-duration="400" data-aos="fade-up"  >
+      <h3 data-aos-duration="400" data-aos="fade-up">
         {{ title }}
       </h3>
 
-      <h2 data-aos-duration="400" data-aos="fade-up"  >
+      <h2 data-aos-duration="400" data-aos="fade-up">
         {{ subtitle }}
       </h2>
 
-      <p data-aos-duration="600" data-aos="fade-up"  >
+      <p data-aos-duration="600" data-aos="fade-up">
         {{ description }}
       </p>
     </div>
-<a href="https://sergiovirtualresume.netlify.app"><button data-aos="zoom-in"  data-aos-delay="300"  class="hero-btn">Virtual Resume  </button></a>
-    
+  
+    <a href="https://sergiovirtualresume.netlify.app"><button data-aos="zoom-in" data-aos-delay="300"
+        class="hero-btn">Virtual Resume </button></a>
+
   </div>
 </template>
 
@@ -26,7 +25,7 @@
 export default {
   props: ["title", "subtitle", "description"],
   data() {
-    
+
     return {
       heroInfo: [{ title: " Sergio Terrero" }],
     };
@@ -35,18 +34,8 @@ export default {
 </script>
 
 <style scoped>
-
-.hero-text span{
-   color:#61DBFB; 
-}
-
-.hero-img {
-  /* border: solid white 1px; */
-
-  height: auto;
-  flex: 1 1 40rem;
-  animation-name: fadeup;
-  animation-duration: 1.3s;
+.hero-text span {
+  color: #61DBFB;
 }
 
 .hero-img img {
@@ -54,15 +43,12 @@ export default {
   width: 360px;
   border-radius: 5rem;
 
-  /* animation-name: fadeupp;
-    animation-duration: 2s; */
+
 }
 
 .hero-content {
-  /* border: solid white 1px; */
   max-width: 900px;
   margin: 0 auto;
-
   animation-duration: 1.3s;
 }
 
@@ -120,21 +106,25 @@ export default {
   margin: 3rem 0;
   font-size: 1.5rem;
   border-radius: 5px;
+  cursor:pointer;
 }
-.hero-btn a{
-text-decoration: none;
-list-style: none;
-   color:#61DBFB; 
-}
-.hero-btn a:hover{
 
-   color:#f5f5f5; 
+.hero-btn a {
+  text-decoration: none;
+  list-style: none;
+  color: #61DBFB;
+}
+
+.hero-btn a:hover {
+
+  color: #f5f5f5;
 }
 
 
 .hero-btn:hover {
   /* background: #46a0b6; */
-  background: #46a0b6;;
+  background: #46a0b6;
+  ;
   color: white;
   transition: 0.3s ease-in-out;
 }
@@ -149,7 +139,7 @@ list-style: none;
 
   .hero-text h3 {
     /* color: #000000; */
-    font-size: 7rem;
+    font-size: 5rem;
 
     letter-spacing: 0.3rem;
     margin-bottom: 1.5rem;
@@ -158,7 +148,7 @@ list-style: none;
   .hero-text p {
     font-weight: 500;
     /* color: #000000; */
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.8rem;
     letter-spacing: 1px;
     width: 100%;
@@ -174,6 +164,40 @@ list-style: none;
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .hero-content {
+    margin: 12rem 0;
+    padding: 0 2.5rem;
+    width: 98%;
+
+  }
+
+  .hero-text h3 {
+  
+    font-size: 4.2rem;
+
+    
+  }
+
+  .hero-text h2 {
+    font-size: 2.8rem;
+    width: 100%;
+    margin: 2.5rem auto;
+    line-height: 3.2rem;
+    /* font-family: "Roboto Slab", serif; */
+  }
+
+  .hero-text p {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .hero-btn {
+    padding: 16px 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   .hero-content {
@@ -183,63 +207,39 @@ list-style: none;
     width: 98%;
   }
 
- .hero-text h2 {
+  .hero-text h2 {
     font-size: 3.4rem;
     width: 100%;
     margin: 2.5rem auto;
   }
+
   .hero-text h3 {
     /* color: #000000; */
     font-size: 5rem;
 
     letter-spacing: 0.4rem;
   }
-  
+
 
   .hero-text p {
     font-weight: 500;
-    /* color: #000000; */
+
     font-size: 1.6rem;
     line-height: 2.5rem;
     letter-spacing: 1px;
     width: 95%;
 
-    /* font-family: "Roboto Slab", serif; */
+   
   }
 }
 
-/* ANIMATIONS START */
-@keyframes fadeup {
-  from {
-    opacity: 0;
-    margin-bottom: -30px;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeupp {
-  from {
-    position: relative;
-    opacity: 0;
-
-    right: 55rem;
-  }
-
-  to {
-    opacity: 0.5;
-  }
-}
-
-/* AANIMATION END */
 
 @media only screen and (max-width: 648px) {
   .hero-content {
     margin: 10rem 0;
-   
-    
+
+
     /* width: 90%; */
   }
 
@@ -259,39 +259,7 @@ list-style: none;
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .hero-content {
-    margin: 12rem 0;
-    padding: 0 2.5rem;
-    width: 98%;
 
-  }
-
-  .hero-text h3 {
-    /* color: #000000; */
-    font-size: 4rem;
-
-    /* font-family: "Roboto Slab", serif; */
-  }
-
-  .hero-text h2 {
-    font-size: 2.7rem;
-    width: 100%;
-    margin: 2.5rem auto;
-    line-height: 3.2rem;
-    /* font-family: "Roboto Slab", serif; */
-  }
-
-  .hero-text p {
-    width: 100%;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-  }
-
-  .hero-btn {
-    padding: 16px 20px;
-  }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hero-content {
@@ -311,8 +279,8 @@ list-style: none;
   .hero-text p {
     font-weight: 500;
     font-size: 1.6rem;
-    width: 95%;
-    /* font-family: "Roboto Slab", serif; */
+    width: 80%; 
+   
   }
 
   @media only screen and (min-width: 1024px) {

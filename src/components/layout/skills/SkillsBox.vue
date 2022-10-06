@@ -195,7 +195,7 @@ export default {
     text-decoration: none;
     list-style: none;
 
-    font-size: 2.2rem;
+    font-size: 2.7rem;
 }
 
 .expertise-box ul li {
@@ -226,8 +226,8 @@ export default {
 }
 
 .expertise-text p {
-
-    line-height: 2.5rem;
+font-size: 1.6rem;
+    line-height: 2.7rem;
 
 }
 

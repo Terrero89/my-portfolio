@@ -1,15 +1,11 @@
 <template>
 
 
-    <ProjectItems v-for="project in projects"
-     :key="project.name" :name="project.name"
-        :description="project.description" 
-        :link="project.link"
-        :stacks="project.stack" 
-        :github="project.github"
+    <ProjectItems v-for="project in projects" :key="project.name" :name="project.name"
+        :description="project.description" :link="project.link" :stacks="project.stack" :github="project.github"
         :web="project.website" />
 
-  
+
 
 </template>
 
@@ -58,13 +54,14 @@ export default {
     //             return require(`@/assets/images/${}`)
     //         }
     //     }
-        
+
     // }
 
- 
+
 
 }
 </script>
 
 <style scoped>
+
 </style>
