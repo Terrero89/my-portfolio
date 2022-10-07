@@ -16,7 +16,10 @@
 
 <style scoped>
 .contact-text {
-    flex: 1 1 38.4rem
+    flex: 1 1 35.4rem;
+    border: 1px solid red;
+    margin: 5rem 0;
+ 
 }
 
 .contact-form {
@@ -25,10 +28,7 @@
     padding: 0 2rem
 }
 
-.contact-text {
-    margin: 5rem 0;
-    padding: 0 2rem
-}
+
 
 .contact-text h3 {
     margin: auto 0;

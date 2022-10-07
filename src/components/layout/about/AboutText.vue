@@ -53,7 +53,7 @@ span a:hover {
 #about .about-header h3 {
     margin: 2rem 0;
     padding: 0 0 0 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3rem;
     color: rgb(255, 255, 255, 0.8);
     font-weight: 600;
@@ -153,7 +153,7 @@ span a:hover {
 
     #about .about-header h3 {
         margin: 0 2.5rem;
-        font-size: 2.7rem;
+        font-size: 2.4rem;
         font-weight: 600;
         letter-spacing: 0.1rem;
         color: rgba(225, 244, 255, 0.8);

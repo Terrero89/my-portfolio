@@ -104,6 +104,16 @@
     .git {
         height: 3rem;
     }
+    .skills-icons {
+
+width: 45rem;
+height: 45rem;
+position: relative;
+/* border:solid yellow 1px; */
+
+
+}
+
 
 }
 
@@ -235,11 +245,10 @@
 
 .skills-icons {
 
-    width: 50rem;
+    width: 45rem;
     height: 45rem;
-
- 
     position: relative;
+    /* border:solid yellow 1px; */
 
 
 }
@@ -249,6 +258,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    
 
 }
 

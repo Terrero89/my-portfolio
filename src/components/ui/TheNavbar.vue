@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 .navbar {
-    height:8rem;
+    height:7rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -94,6 +94,7 @@ export default {
     padding: 1.5rem 1.5rem;
     z-index: 2;
 
+   overflow: hidden;
     /*background-color: rgb(28, 26, 51);*/
 }
 
@@ -110,11 +111,13 @@ export default {
     border-bottom: 1px rgb(44, 44, 44, 0.1) solid;
     padding: 1.5rem 1.5rem;
     z-index: 2;
+    overflow: hidden;
+    
 
 }
 
 .navbarOff {
-
+    overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;

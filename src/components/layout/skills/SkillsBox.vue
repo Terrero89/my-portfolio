@@ -155,7 +155,7 @@ export default {
 }
 
 .expertise-box {
-    margin: 3.5rem 0rem;
+    margin: 3rem 0rem;
     border-radius: 10px;
     padding: 1rem 2rem;
 width: 100%;
@@ -165,13 +165,14 @@ width: 100%;
 
 .expertise-box:nth-child(1):hover {
 
-
+    transform: scale(1.05);
     transition: .4s;
     box-shadow: 2px 0px 15px 8px rgb(77, 84, 128, 0.5)
 }
 
 .expertise-box:nth-child(2):hover {
-
+  overflow: hidden;
+transform: scale(1.05);
     transition: .4s;
     box-shadow: 2px 0px 15px 8px rgb(146, 168, 22, 0.5)
 }
@@ -194,7 +195,7 @@ width: 100%;
     text-decoration: none;
     list-style: none;
 
-    font-size: 2.7rem;
+    font-size: 2.4rem;
 }
 
 .expertise-box ul li {

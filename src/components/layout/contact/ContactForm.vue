@@ -134,15 +134,10 @@ export default {
 }
 
 .error {
-
-
     background-color: rgb(163, 0, 0);
-
 }
 
 .success {
-
-
     background-color: rgb(3, 122, 116);
 }
 
@@ -177,7 +172,7 @@ input {
 
     width: 100%;
     height: 4rem;
-    border-radius: 10px;
+    border-radius: 3px;
 
     background-color: rgba(255, 255, 255, 0.9);
     border: solid rgba(236, 236, 240, 0.5) 1px;
@@ -189,7 +184,7 @@ input {
 
 textarea {
     border: solid rgb(211, 211, 231, 0.1) 0.5px;
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     color: rgb(0, 0, 0);
@@ -198,9 +193,11 @@ textarea {
 }
 
 .contact-form {
+    width: 41.62rem;
+    padding: 0 2rem;
     border-radius: 10px;
-
-    /* box-shadow: 5px 5px 15px 5px rgba(73, 73, 73, 0.19); */
+border: solid blue 1px;
+    box-shadow: 5px 5px 15px 5px rgba(73, 73, 73, 0.19);
     margin: 0 auto;
 }
 

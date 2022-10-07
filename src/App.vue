@@ -96,14 +96,19 @@ export default {
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
 
+
 }
 
 html {
-    position: relative;
+
 
     background-color: #031226;
     color: white;
     font-size: 62.5%;
+    /* border:solid blue 0.5px; */
+
+  
+
 }
 
 p {

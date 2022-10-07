@@ -28,7 +28,6 @@ export default {
     margin: 5rem 0;
     width: 30rem;
     height: 40rem;
-
     width: 40rem;
     height: 40rem;
     border-radius: 50%;

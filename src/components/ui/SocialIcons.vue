@@ -1,7 +1,6 @@
 <template>
     <div class="social-icons">
-        <a class="soc-icon" href="https://github.com/" alt="github-images"><i class="fa fa-github"
-                aria-hidden="true"></i> </a>
+      
         <a class="soc-icon" href="https://www.linkedin.com/feed/" alt="social-images"><i class="fa fa-linkedin-square"
                 aria-hidden="true"></i> </a>
         <a class="soc-icon" href="https://twitter.com/home" alt="linkedin-image"><i class="fa fa-twitter"
