@@ -197,7 +197,7 @@ textarea {
     padding: 0 2rem;
     border-radius: 10px;
 /* border: solid blue 1px; */
-    box-shadow: 5px 5px 15px 5px rgba(73, 73, 73, 0.19);
+    /* box-shadow: 5px 5px 15px 5px rgba(73, 73, 73, 0.19); */
     margin: 0 auto;
 }
 
