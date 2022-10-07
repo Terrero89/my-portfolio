@@ -17,7 +17,7 @@
 <style scoped>
 .contact-text {
     flex: 1 1 35.4rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 5rem 0;
  
 }
