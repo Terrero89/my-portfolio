@@ -117,22 +117,21 @@ export default {
 </script>
 
 <style scoped>
-
-.skill-box{
+.skill-box {
     /* border: solid blue 1px;; */
-    flex:1 1 26.9rem
+    flex: 1 1 26.9rem
 }
+
 .icons-wrapper {
 
     display: flex;
     justify-content: center;
     position: relative;
-      flex:1 1 50rem
-
+    flex: 1 1 50rem
 }
 
 .skills-wrapper {
-   
+
     margin: 0 auto;
     max-width: 1300px;
     /* border: solid red 1px; */
@@ -159,28 +158,28 @@ export default {
     margin: 3.5rem 0rem;
     border-radius: 10px;
     padding: 1rem 2rem;
-
+width: 100%;
     /* background-color: #041731; */
     background-color: #01152e;
 }
 
 .expertise-box:nth-child(1):hover {
-  
 
-  transition: .4s;
-    box-shadow:  2px 0px 15px 8px rgb(77, 84, 128,0.5)
+
+    transition: .4s;
+    box-shadow: 2px 0px 15px 8px rgb(77, 84, 128, 0.5)
 }
 
 .expertise-box:nth-child(2):hover {
-  
-     transition: .4s;
-    box-shadow: 2px 0px 15px 8px  rgb(146, 168, 22,0.5)
+
+    transition: .4s;
+    box-shadow: 2px 0px 15px 8px rgb(146, 168, 22, 0.5)
 }
 
 
 
 .expertise-text p {
- 
+
     color: rgb(255, 255, 255, 0.8);
     margin: 1rem 0;
     font-size: 1.4rem;
@@ -226,7 +225,7 @@ export default {
 }
 
 .expertise-text p {
-font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 2.7rem;
 
 }
@@ -289,18 +288,18 @@ font-size: 1.6rem;
 
     }
 
-    .skill-box{
+    .skill-box {
 
-    max-width: 85%;
+        max-width: 90%;
 
+    }
+
+    .expertise-box {
+        margin: 5rem 0 0 0;
+    }
 }
 
-.expertise-box {
-    margin: 5rem 0 0 0 ;
-}
-}
-
-@media only screen and (max-width: 768px) and (min-width:581px){
+@media only screen and (max-width: 768px) and (min-width:581px) {
 
 
     .icons-wrapper {
@@ -309,14 +308,14 @@ font-size: 1.6rem;
 
     }
 
-    .skill-box{
+    .skill-box {
 
-    max-width: 70%;
+        max-width: 70%;
 
-}
+    }
 
-.expertise-box {
-    margin: 5rem 0 0 0 ;
-}
+    .expertise-box {
+        margin: 5rem 0 0 0;
+    }
 }
 </style>
