@@ -68,6 +68,18 @@ export default {
 </script>
 
 <style>
+
+/* 
+
+paragraphs:  
+color: rgba(225, 244, 255, 0.7); 
+font-size: 1.58rem;
+line-height: 2.5rem;
+
+*/
+
+
+
 .bg {
     
     z-index: 1000;
@@ -76,17 +88,17 @@ export default {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    animation:change;
+    /* animation:change; */
 }
 
-@keyframes change {
+/* @keyframes change {
 
     0%{opacity: 0; background-color:rgb(212, 212, 212);transition:0.4s ease-in-out}
     10%{opacity: 0; background-color:rgb(255, 255, 255); transition:0.4s ease-in-out}
     10%{opacity: 0; background-color:rgb(255, 255, 255) ;transition:0.4s ease-in-out}
     90%{opacity: 1;background-color:rgb(255, 255, 255,0.6); transition:0.4s ease-in-out; }
      100%{opacity: 0;background-color:rgb(255, 255, 255,0.6); transition:0.4s ease-in-out; }
-}
+} */
 
 * {
     /* border: solid rgb(9, 255, 0) .1px; */
@@ -97,6 +109,11 @@ export default {
     font-family: 'Raleway', sans-serif;
 
 
+
+}
+
+body{
+    overflow-x: hidden;
 }
 
 html {
@@ -105,7 +122,7 @@ html {
     background-color: #031226;
     color: white;
     font-size: 62.5%;
-    /* border:solid blue 0.5px; */
+ 
 
   
 
@@ -113,6 +130,8 @@ html {
 
 p {
     color: rgb(255, 255, 255);
+  
+    
 }
 
 /* Main titles H3 */
@@ -127,7 +146,9 @@ h4,
 h5,
 button {
 
-    color: #61DBFB;
+    /* color: #61DBFB; */
     /*react color */
 }
 </style>
+
+

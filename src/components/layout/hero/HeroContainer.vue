@@ -14,7 +14,7 @@
         {{ description }}
       </p>
     </div>
-  
+
     <a href="https://sergiovirtualresume.netlify.app"><button data-aos="zoom-in" data-aos-delay="300"
         class="hero-btn">Virtual Resume </button></a>
 
@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style scoped>
+/*START REGULAR SCREEN SIZE CSS PROPERTIES */
 .hero-text span {
   color: #61DBFB;
 }
@@ -52,52 +53,39 @@ export default {
   animation-duration: 1.3s;
 }
 
-/* .hero-text{
-   
- } */
 
 .hero-text h3 {
-  font-size: 9.5rem;
-  font-weight: bold;
+  font-size: 7.5rem;
   letter-spacing: 0.1rem;
   opacity: 0.8;
   margin-bottom: 2rem;
 }
 
 .hero-text h2 {
-  font-size: 4.5rem;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
   line-height: 5rem;
   margin: 2rem 0;
   color: rgba(225, 244, 255, 0.8);
   width: 70rem;
+
 }
 
 .hero-text p {
-  font-weight: 500;
-  color: rgba(225, 244, 255, 0.8);
-  font-size: 1.6rem;
-  line-height: 3rem;
-  letter-spacing: 1px;
+  color: rgba(225, 244, 255, 0.7);
+  font-size: 1.58rem;
+  line-height: 2.5rem;
   margin: 2.5rem 0;
   width: 60%;
 }
 
 .hero-text span {
   font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   line-height: 5rem;
 }
 
-.hero-text h2 span {
-  font-size: 4.5rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  line-height: 5rem;
-  color: #0064fa;
-}
+
 
 .hero-btn {
   padding: 16px 29px;
@@ -106,7 +94,7 @@ export default {
   margin: 3rem 0;
   font-size: 1.5rem;
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .hero-btn a {
@@ -129,68 +117,62 @@ export default {
   transition: 0.3s ease-in-out;
 }
 
-/*Media queries for hero section*/
+/*ENDS REGULAR SCREEN SIZE CSS PROPERTIES */
 
+/* ***************************************** */
+/*Media queries for hero section*/
 @media only screen and (max-width: 390px) {
   .hero-content {
-    margin: 10rem 0;
+
     padding: 0 0.5rem;
+    background-color:  rgb(59, 0, 155);
+    width: 90%;
   }
 
   .hero-text h3 {
-    /* color: #000000; */
-    font-size: 5rem;
 
+    font-size: 5rem;
     letter-spacing: 0.3rem;
     margin-bottom: 1.5rem;
   }
 
   .hero-text p {
     font-weight: 500;
-    /* color: #000000; */
-    font-size: 1.7rem;
     line-height: 2.8rem;
     letter-spacing: 1px;
     width: 100%;
   }
 
-  .hero-text h2 span {
-    font-size: 4.5rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    line-height: 5rem;
 
-    color: #0064fa;
-  }
 }
 
-@media only screen and (max-width: 425px) {
+/* SEMI SM SCREEN */
+@media only screen and  (max-width: 425px) {
   .hero-content {
-    margin: 12rem 0;
-    padding: 0 2.5rem;
-    width: 98%;
+ 
+    padding:0rem;
+    width: 90%;
+    background-color:  rgb(240, 162, 162);
 
   }
 
   .hero-text h3 {
-  
     font-size: 4.2rem;
-
-    
   }
 
   .hero-text h2 {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
     width: 100%;
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     line-height: 3.2rem;
-    /* font-family: "Roboto Slab", serif; */
+
   }
 
   .hero-text p {
     width: 100%;
-    font-size: 1.6rem;
+
     line-height: 2.5rem;
+    font-weight: 300;
   }
 
   .hero-btn {
@@ -198,13 +180,43 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) {
-
+/* MD TABLET SCREEN */
+@media only screen and  (min-width: 426px)  and (max-width: 648px) {
   .hero-content {
-    margin: 10rem 0;
-    padding: 0 2rem;
+
+    background-color:  rgb(68, 68, 68);
+    width: 88%;
+
+
+  }
+
+  .hero-text h3 {
+    font-size: 4.3rem;
+  }
+
+  .hero-text h2 {
+    line-height: 3rem;
+    font-size: 2.8rem;
+    width: 100%;
+    margin: 2.5rem auto;
+   
+  }
+
+  .hero-text p {
 
     width: 98%;
+  }
+}
+
+
+/* TABLET SCREEN */
+@media only screen and (min-width: 649px) and (max-width: 768px) {
+
+  .hero-content {
+  
+    padding: 0 2rem;
+    width: 90%;
+    background-color:  rgb(167, 23, 23);
   }
 
   .hero-text h2 {
@@ -214,79 +226,48 @@ export default {
   }
 
   .hero-text h3 {
-    /* color: #000000; */
+  
     font-size: 5rem;
 
-    letter-spacing: 0.4rem;
   }
 
 
   .hero-text p {
-    font-weight: 500;
-
-    font-size: 1.6rem;
     line-height: 2.5rem;
-    letter-spacing: 1px;
+ 
+
     width: 95%;
 
-   
+
   }
 }
 
 
-
-@media only screen and (max-width: 648px) {
-  .hero-content {
-    margin: 10rem 0;
-
-
-    /* width: 90%; */
-  }
-
-  .hero-text h3 {
-    font-size: 4.3rem;
-  }
-
-  .hero-text h2 {
-    font-size: 2.8rem;
-    width: 100%;
-    margin: 2.5rem auto;
-  }
-
-  .hero-text p {
-    font-size: 1.6rem;
-    width: 98%;
-  }
-}
 
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hero-content {
-    padding: 0 2.5rem;
-    width: 90%;
+    padding: 0rem;
+    width: 85%;
+    background-color:  rgb(0, 124, 124);
   }
 
   .hero-text h3 {
     font-size: 6.1rem;
-    letter-spacing: 0.3rem;
+
   }
 
   .hero-text h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
+
   }
 
   .hero-text p {
-    font-weight: 500;
-    font-size: 1.6rem;
-    width: 80%; 
-   
+    width: 80%;
+
   }
 
-  @media only screen and (min-width: 1024px) {
-    .hero-content {
-      margin: 12rem 0;
-    }
-  }
+
 }
 </style>
