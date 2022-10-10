@@ -71,7 +71,7 @@ export default {
 /* 
 
 paragraphs:  
-color: rgba(225, 244, 255, 0.7); 
+color: rgba(205, 229, 243, 0.8); 
 font-size: 1.55rem;
 line-height: 2.3rem;
 

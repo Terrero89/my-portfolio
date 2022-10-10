@@ -12,7 +12,9 @@
         class="image-container"
         uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;"
       >
-        <img :src="link" class="project-image" alt="project-img" />
+        <div class="gradient">
+          <img :src="link" class="project-image" alt="project-img" />
+        </div>
       </div>
 
       <div
@@ -30,8 +32,12 @@
         </div>
 
         <div class="buttons">
-          <button class="btn-regular"><a :href="web"> Website</a></button>
-          <button class="btn-fill"><a :href="github"> Github</a></button>
+          <TheOutlinedButton
+            style="margin-right: 1rem"
+            :link="this.web"
+            button-title="Website"
+          />
+          <TheFilledButton :link="this.github" button-title="Github" />
         </div>
       </div>
 
@@ -47,7 +53,10 @@
 </template>
 
 <script>
+import TheOutlinedButton from "../../ui/TheOutlinedButton.vue";
+import TheFilledButton from "../../ui/TheFilledButton.vue";
 export default {
+  components: { TheOutlinedButton, TheFilledButton },
   props: [
     "projects",
     "name",
@@ -67,6 +76,12 @@ export default {
 </script>
 
 <style scoped>
+.gradient {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .techs {
   margin: 0rem 2.5rem 0 0;
   font-size: 1.3rem;
@@ -78,8 +93,9 @@ export default {
 }
 
 .buttons {
-  display: inline-block;
-  margin: 3.5rem 0 0 0;
+  display: flex;
+  /* display: inline-block; */
+  /* margin: 3.5rem 0 0 0; */
 }
 
 .project-text .techs span {
@@ -148,7 +164,7 @@ button a {
   max-width: 1700px;
 
   overflow: hidden;
-  background-color: #01152e;
+  /* background-color: #01152e; */
   opacity: 0.5;
   padding: 2rem 0;
 
@@ -164,28 +180,22 @@ button a {
 }
 
 .project-text {
-  /* border: solid 1px blue; */
   flex: 1 1 28rem;
   width: 50rem;
-
   padding: 0 1rem;
   margin: 2rem 5rem;
   padding: 2rem;
-  /* 
-    border-radius: 5px; */
 }
 
 .project-text h3 {
-  /* width: 70%; */
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 
-  color: rgb(255, 244, 255);
+  color: rgba(205, 229, 243);
 
   margin: 1rem 0;
-  /* border: solid red 1px; */
 }
+
 .project-text span {
-  /* width: 70%; */
   font-size: 1.4rem;
   font-weight: 600;
   color: #61dbfb;
@@ -196,16 +206,17 @@ button a {
 
 .project-text p {
   max-width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   margin: 2rem 0 2.5rem 0;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
 
-  color: rgb(255, 244, 255, 0.8);
-  /* border: solid red 1px; */
+  color: rgba(205, 229, 243, 0.8);
 }
 
 .techs li {
   margin: 1rem 0;
+  color: #61dbfb;
+  font-size: 1.35rem;
 }
 
 .tech-section {
@@ -216,7 +227,9 @@ button a {
 }
 
 .image-container {
-  z-index: 100;
+  filter: contrast(100%);
+  filter: brightness(79%);
+
   width: 100;
   height: 100%;
   flex: 1 1 28rem;
@@ -225,32 +238,33 @@ button a {
   margin: 0 5rem;
 
   align-self: center;
-  /* border: solid red 1px; */
 }
 
 .project-image {
   border-radius: 5px;
-
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(black);
 }
 
-@media only screen and (max-width: 480px) and (min-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .project-text {
     max-width: 90%;
+  }
+
+  .project-container {
+    padding: 0rem 2rem;
+    background-color: none;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .image-container {
-    /* background-color: red; */
-    /* border: solid red 1px; */
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-color: none;
-    z-index: -1;
   }
 
   .project-text {
@@ -261,10 +275,11 @@ button a {
 
   .project-container {
     padding: 0rem 2rem;
+    background-color: none;
   }
 
   .project-image {
-    opacity: 0.08;
+    opacity: 0.1;
     object-fit: cover;
   }
 
@@ -272,43 +287,34 @@ button a {
     max-width: 100%;
     padding: 0;
   }
+}
 
-  @media only screen and (min-width: 1300px) {
-    .project-text {
-      margin: 2rem 0 0 0;
-      max-width: 60rem;
-      /* border: solid red 1px; */
-    }
-  }
-
+@media only screen and (min-width: 769px) {
   .project-container {
     margin: 5rem 2rem;
-  }
-
-  .project-text p {
-    width: 100%;
-    /* border: solid red 1px; */
-  }
-
-  .btn-fill {
-    padding: 11px 30px;
-    background: #00657e;
-    z-index: 100;
-    border: solid 1px #2e4c6d;
-
-    margin: 1rem 0;
-    font-size: 1.5rem;
-  }
-
-  .btn-regular {
-    padding: 11px 30px;
-    background: none;
-
-    border: solid 1px #2e4c6d;
-    z-index: 100;
-    margin: 1rem 1.5rem 0 0;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    background-color: #01152e;
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .project-text {
+    margin: 2rem 0 0 0;
+    max-width: 60rem;
+    /* border: solid red 1px; */
+  }
+}
+
+.project-container {
+  margin: 5rem 2rem;
+  background-color: none;
+}
+
+.project-text p {
+  width: 100%;
+  /* border: solid red 1px; */
+}
+
+
+
+
 </style>

@@ -25,11 +25,9 @@
       >
         <div class="expertise-text">
           <div class="expertise-title">
-            <h3 v-if="skills.title === 'Front-end'">Front End Tools</h3>
+            <h3 v-if="skills.title === 'Front-end'">Front-end Tools</h3>
 
-            <h3 v-else>Backend End Tools</h3>
-
-            <div></div>
+            <h3 v-else>Backend-end Tools</h3>
           </div>
           <p>
             {{ skills.text }}
@@ -111,27 +109,26 @@ export default {
 
 <style scoped>
 .skill-box {
-    /* margin-left: 5rem; */
-  /* border: solid blue 1px;; */
-  flex: 1 1 27.9rem;
- 
-  border: solid red 1px;
+  flex: 1 1 25.9rem;
+
+  /* border: solid red 1px; */
   margin: auto 0;
 }
 
 .icons-wrapper {
-    border: solid rgb(30, 255, 0) 1px;
+  /* border: solid rgb(30, 255, 0) 1px; */
   display: flex;
   justify-content: center;
   position: relative;
-  flex: 1 1 24.9rem;
+  flex: 1 1 30.3rem;
 }
 
 .skills-wrapper {
-    padding: 1rem 2rem;
+  max-width: 1300px;
+  padding: 1rem 3rem;
   margin: 0 auto;
 
-  border: solid rgb(184, 34, 139) 1px;
+  /* border: solid rgb(184, 34, 139) 1px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -150,8 +147,8 @@ export default {
   margin: 3rem auto;
   border-radius: 10px;
   padding: 1rem 2rem;
-  max-width: 70rem;
- /* border: solid blue 1px; */
+  max-width: 55rem;
+
   background-color: #01152e;
 }
 
@@ -168,22 +165,13 @@ export default {
   box-shadow: 2px 0px 15px 8px rgb(146, 168, 22, 0.5);
 }
 
-.expertise-text p {
-  color: rgb(255, 255, 255, 0.8);
-  margin: 1rem 0;
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
-
 .expertise-box h3 {
-  /* color: rgb(0, 241, 201); */
-  /* color: #5EE3F2; */
-  color: #61dbfb;
-  letter-spacing: 0.15rem;
+  color: rgb(255, 255, 255, 0.8);
+  font-weight: 700;
   text-decoration: none;
   list-style: none;
 
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
 
 .expertise-box ul li {
@@ -192,7 +180,6 @@ export default {
   margin: 0rem 2.5rem 0 0;
   font-size: 1.3rem;
   letter-spacing: 0.15rem;
-  color: rgb(255, 244, 255, 0.8);
 
   text-decoration: none;
   list-style: none;
@@ -207,13 +194,21 @@ export default {
 }
 
 .expertise-tech .technologies ul li {
-  color: rgb(255, 255, 255, 0.8);
+  /* border: 1px solid rgb(0, 255, 76); */
+  /* color: #0097bd;  */
+
+  color: #61dbfb;
   font-size: 1.35rem;
+
+  margin-right: 1.25rem;
+  margin-top: 1rem;
 }
 
 .expertise-text p {
+  color: rgba(225, 244, 255, 0.7);
+  margin: 1rem 0;
   font-size: 1.5rem;
-  line-height: 2.7rem;
+  line-height: 2.4rem;
 }
 
 /* expertise individually */
@@ -224,12 +219,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin-right: 3rem;
-}
-
-.technologies ul li {
-  width: 100%;
-  margin-right: 1.25rem;
-  margin-top: 1rem;
 }
 
 @keyframes fade {
@@ -243,13 +232,28 @@ export default {
 }
 
 /**table size */
+
+/* @media only screen and (min-width: 425px) and (max-width: 500px) {
+} */
 @media only screen and (max-width: 500px) {
   .expertise-tech ul li {
     margin-top: 1rem;
   }
+
+  .skill-box {
+    max-width: 95%;
+  }
+
+  .skills-wrapper {
+    padding: 0 0.5rem;
+  }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (min-width: 501px) and (max-width: 580px) {
+  .skill-box {
+    max-width: 90%;
+  }
+
   .icons-wrapper {
     margin: 0 0 10rem 0;
   }
@@ -263,13 +267,13 @@ export default {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 581px) {
+@media only screen and (min-width: 581px) and (max-width: 768px) {
   .icons-wrapper {
     margin: 0 0 10rem 0;
   }
 
   .skill-box {
-    max-width: 70%;
+    max-width: 85%;
   }
 
   .expertise-box {

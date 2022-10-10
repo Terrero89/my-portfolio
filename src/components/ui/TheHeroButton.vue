@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <a  :href="link"><button class="btn">{{buttonTitle}} </button></a>
+        <a data-aos="zoom-in" data-aos-delay="500" :href="link"><button class="btn">{{buttonTitle}} </button></a>
     </div>
 </template>
 
@@ -19,33 +19,31 @@ export default {
 
 <style scoped>
 .btn {
-    z-index: 101;
-    padding: 12px 22px;
-    background: rgb(38, 125, 151);
-    border: rgb(38, 125, 151);
-    color: #ffffff;
+    padding: 14px 27px;
+    background: none;
+    border: solid 1px #61DBFB;
+    color: #61DBFB;
     margin: 3rem 0;
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
-   
+    position: block;
 }
 
-.btn a {
+.btn>a {
     font-size: 15px;
-   
+    font-family: Arial;
     width: 140px;
     height: 50px;
     border-width: none;
 
 }
- .btn:hover {
-
+.btn:hover {
+    /* background: #46a0b6; */
     background: #46a0b6;
-    border: #46a0b6;
+    ;
     color: white;
     transition: 0.3s ease-in-out;
-   
 }
 
 

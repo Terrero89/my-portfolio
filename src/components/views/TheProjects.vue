@@ -3,11 +3,11 @@
 <section id="project-section">
 
     <div class="project-wrapper">
-        <section-titles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80"
+        <SectionTitles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80"
             data-aos-offset="0"
          :style="{ margin: '10rem 0 2rem 0', fontSize: '4rem'}" title="My Projects" />
       
-        <section-titles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150"
+         <SectionTitles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150"
             data-aos-offset="0"
         :style="{ margin: '0rem 0 3rem 0', fontSize: '3.5rem', color:subTextColor}" title="Some of my best projects" />
 
@@ -18,10 +18,12 @@
 
 <script>
 import ProjectList from "../layout/project/ProjectList.vue"
+import SectionTitles from '../ui/SectionTitles'
 
 export default {
     name: "project list",
     components: {
+        SectionTitles,
         ProjectList
     },
 

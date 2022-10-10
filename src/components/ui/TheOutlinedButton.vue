@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <a data-aos="zoom-in" data-aos-delay="500" :href="link"><button class="btn">{{buttonTitle}} </button></a>
+        <a  :href="link"><button class="btn">{{buttonTitle}} </button></a>
     </div>
 </template>
 
@@ -19,7 +19,8 @@ export default {
 
 <style scoped>
 .btn {
-    padding: 14px 27px;
+    z-index: 101;
+    padding: 12px 22px;
     background: none;
     border: solid 1px #61DBFB;
     color: #61DBFB;
@@ -27,9 +28,10 @@ export default {
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+  
 }
 
-.hero-btn>a {
+.btn>a {
     font-size: 15px;
     font-family: Arial;
     width: 140px;
@@ -37,11 +39,18 @@ export default {
     border-width: none;
 
 }
-.hero-btn:hover {
+.btn:hover {
     /* background: #46a0b6; */
     background: #46a0b6;
     ;
     color: white;
     transition: 0.3s ease-in-out;
 }
+
+
+/* make the buttons a little smaller on sm screen
+ .hero-btn {
+    padding: 16px 20px;
+  }
+ */
 </style>

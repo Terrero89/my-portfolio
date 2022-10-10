@@ -39,24 +39,11 @@ export default {
    
  
     overflow: hidden;
-    margin: 0rem 0 10rem 0;
+    margin: 0 auto;
     min-height: 80vh;
   
 
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
-
-.technology-box img:hover {
-    transform: scale(1.3);
-    transition: 0.1s ease-in, 0.1s ease;
-}
 </style>

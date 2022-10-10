@@ -4,7 +4,10 @@
     <div class="about-container">
        
         <!-- about text component -->
-        <about-text></about-text>
+     
+            <about-text></about-text>
+     
+        
         <!-- about image component -->
         <about-image></about-image>
 
