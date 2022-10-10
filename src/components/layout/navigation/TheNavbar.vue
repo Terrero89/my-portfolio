@@ -1,41 +1,40 @@
 <template>
     <header>
-        <nav class="navbar" 
-        :class="{ navbarOn: isScrolled, navbarOff: !isScrolled }">
+        <nav class="navbar" :class="{ navbarOn: isScrolled, navbarOff: !isScrolled }">
             <a href="#" data-aos="zoom-out" data-aos-delay="200" class="nav-logo">ST.</a>
             <ul class="nav-menu" :class="[{ active: menuIsVisible }]">
 
 
-                <li class="nav-item" data-aos-duration="200" data-aos="fade-down"  data-aos-delay="350"  data-aos-easing="ease-in-sine" @click="toggleOn">
+                <li class="nav-item" data-aos-duration="200" data-aos="fade-down" data-aos-delay="350"
+                    data-aos-easing="ease-in-sine" @click="toggleOn">
                     <a href="#about" class="nav-link">About</a>
                 </li>
 
-                <li class="nav-item" 
-                data-aos-duration="300" data-aos="fade-down"  ata-aos-easing="ease-in-sine" data-aos-delay="350" 
-                @click="toggleOn">
+                <li class="nav-item" data-aos-duration="300" data-aos="fade-down" ata-aos-easing="ease-in-sine"
+                    data-aos-delay="350" @click="toggleOn">
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
 
-                <li class="nav-item"
-                data-aos-duration="400" data-aos="fade-down"  ata-aos-easing="ease-in-sine" data-aos-delay="350" 
-                 @click="toggleOn">
+                <li class="nav-item" data-aos-duration="400" data-aos="fade-down" ata-aos-easing="ease-in-sine"
+                    data-aos-delay="350" @click="toggleOn">
                     <a href="#project-section" class="nav-link">Projects</a>
                 </li>
 
-                <li class="nav-item" 
-                data-aos-duration="500" data-aos="fade-down"  ata-aos-easing="ease-in-sine" data-aos-delay="350" 
-                @click="toggleOn">
+                <li class="nav-item" data-aos-duration="500" data-aos="fade-down" ata-aos-easing="ease-in-sine"
+                    data-aos-delay="350" @click="toggleOn">
                     <a href="#contact-section" class="nav-link">Contact</a>
                 </li>
 
 
             </ul>
-            <div class="hamburger" @click="toggleOn" :class="[{ active: menuIsVisible }]">
+            <div class="hamburger"  @click="toggleOn" :class="[{ active: menuIsVisible }]">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+
         </nav>
+     
     </header>
 </template>
 
@@ -74,6 +73,7 @@ export default {
             }
         },
 
+     
 
 
 
@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 .navbar {
-    height:7rem;
+    height: 7rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -94,7 +94,7 @@ export default {
     padding: 1.5rem 1.5rem;
     z-index: 2;
 
-   overflow: hidden;
+    overflow: hidden;
     /*background-color: rgb(28, 26, 51);*/
 }
 
@@ -112,7 +112,7 @@ export default {
     padding: 1.5rem 1.5rem;
     z-index: 2;
     overflow: hidden;
-    
+
 
 }
 
@@ -254,7 +254,7 @@ ul.nav-menu {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(255, 244, 255,0.8);
+    background-color: rgb(255, 244, 255, 0.8);
     z-index: 110;
 }
 
@@ -289,7 +289,8 @@ ul.nav-menu {
         right: 0%;
         flex-direction: column;
         justify-content: center;
-        background-color: #021429;;
+        background-color: #021429;
+        ;
         border-radius: 0 0 10px 10px;
         text-align: center;
         transition: 0.3s;
@@ -310,18 +311,19 @@ ul.nav-menu {
     .nav-menu.active {
         left: 0;
     }
-        .nav-item {
+
+    .nav-item {
         align-items: center;
         color: #000000;
         margin: 4.5rem 0;
     }
 
-/* nav links in mobile */
-    .nav-item a{
-        font-size:1.6rem;
+    /* nav links in mobile */
+    .nav-item a {
+        font-size: 1.6rem;
         margin: 2.5rem 0;
-          color: rgba(255, 255, 255, 0.8);
-        
+        color: rgba(255, 255, 255, 0.8);
+
     }
 
 
@@ -336,7 +338,7 @@ ul.nav-menu {
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
         width: 25px;
-        
+
     }
 
     .hamburger.active .bar:nth-child(1) {

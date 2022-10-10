@@ -4,10 +4,10 @@
 
    
     <div class="skills-container">
-            <section-titles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80" data-aos-offset="0"
+            <SectionTitles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80" data-aos-offset="0"
             :style="{ margin: '10rem 0 1.5rem 0'}" title="My Skills" />
 
-        <section-titles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0"
+            <SectionTitles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0"
             :style="{ margin: '0rem 0 3rem 0', fontSize: '3.5rem', color: 'white' }" title="Some tools I've used" />
         
         <SkillsBox></SkillsBox>
@@ -18,9 +18,10 @@
 <script>
 
 import SkillsBox from "./SkillsBox.vue"
+import SectionTitles from '../../ui/SectionTitles.vue'
 export default {
     components: {
-
+        SectionTitles,
         SkillsBox
     },
 

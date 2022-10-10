@@ -1,35 +1,33 @@
 <template>
-  <div class="hero-content" uk-parallax="target: #hero-img; start: 90%; end: 30%; y: -450; easing: 5;">
-    <div class="hero-text">
-      <span>Hi there, I'm</span>
-      <h3 data-aos-duration="400" data-aos="fade-up">
-        {{ title }}
+  <div class="hero-content"  uk-parallax="target: #hero-img; start: 90vh; end: 10vh; y: -300; easing: 1;">
+    <div class="hero-text" >
+      <span class="hero-greet">Hi there, I'm</span>
+      <h3 data-aos-duration="400"  data-aos="fade-up">
+        Sergio Terrero
       </h3>
 
-      <h2 data-aos-duration="400" data-aos="fade-up">
-        {{ subtitle }}
+      <h2 data-aos-duration="400"   data-aos="fade-up">
+        I build ideas with code from scratch.
       </h2>
 
       <p data-aos-duration="600" data-aos="fade-up">
-        {{ description }}
+        I'm a passionate <span>Front-end Developer</span> with the desire to learn, improve and help build ideas. My main focus is to
+        build performant, accessible, and search optimized websites and apps.
       </p>
     </div>
+   
 
-    <a href="https://sergiovirtualresume.netlify.app"><button data-aos="zoom-in" data-aos-delay="300"
-        class="hero-btn">Virtual Resume </button></a>
-
+    <TheOutlinedButton  button-title="Virtual Resume"
+      link="https://sergiovirtualresume.netlify.app" />
   </div>
 </template>
 
 <script>
+import TheOutlinedButton from "../../ui/TheOutlinedButton.vue"
 export default {
   props: ["title", "subtitle", "description"],
-  data() {
+  components: { TheOutlinedButton },
 
-    return {
-      heroInfo: [{ title: " Sergio Terrero" }],
-    };
-  },
 };
 </script>
 
@@ -58,14 +56,14 @@ export default {
   font-size: 7.5rem;
   letter-spacing: 0.1rem;
   opacity: 0.8;
-  margin-bottom: 2rem;
+
 }
 
 .hero-text h2 {
   font-size: 5rem;
   letter-spacing: 0.1rem;
   line-height: 5rem;
-  margin: 2rem 0;
+  margin: 1.8rem 0;
   color: rgba(225, 244, 255, 0.8);
   width: 70rem;
 
@@ -73,49 +71,26 @@ export default {
 
 .hero-text p {
   color: rgba(225, 244, 255, 0.7);
-  font-size: 1.58rem;
+  font-size: 1.55rem;
   line-height: 2.5rem;
-  margin: 2.5rem 0;
+  margin: 1rem 0;
   width: 60%;
 }
 
 .hero-text span {
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  line-height: 5rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+
+}
+.hero-text  .hero-greet{
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing:0.1rem;
+  margin-bottom:2rem;
 }
 
 
 
-.hero-btn {
-  padding: 16px 29px;
-  background: none;
-  border: solid 1px #2e4c6d;
-  margin: 3rem 0;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero-btn a {
-  text-decoration: none;
-  list-style: none;
-  color: #61DBFB;
-}
-
-.hero-btn a:hover {
-
-  color: #f5f5f5;
-}
-
-
-.hero-btn:hover {
-  /* background: #46a0b6; */
-  background: #46a0b6;
-  ;
-  color: white;
-  transition: 0.3s ease-in-out;
-}
 
 /*ENDS REGULAR SCREEN SIZE CSS PROPERTIES */
 
@@ -125,7 +100,7 @@ export default {
   .hero-content {
 
     padding: 0 0.5rem;
-    background-color:  rgb(59, 0, 155);
+    background-color: rgb(59, 0, 155);
     width: 90%;
   }
 
@@ -138,7 +113,7 @@ export default {
 
   .hero-text p {
     font-weight: 500;
-    line-height: 2.8rem;
+    line-height: 2rem;
     letter-spacing: 1px;
     width: 100%;
   }
@@ -147,12 +122,12 @@ export default {
 }
 
 /* SEMI SM SCREEN */
-@media only screen and  (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .hero-content {
- 
-    padding:0rem;
+
+    padding: 0rem;
     width: 90%;
-    background-color:  rgb(240, 162, 162);
+    background-color:  rgb(99, 58, 58);
 
   }
 
@@ -164,14 +139,14 @@ export default {
     font-size: 3.1rem;
     width: 100%;
     margin: 1.5rem auto;
-    line-height: 3.2rem;
+    line-height: 3rem;
 
   }
 
   .hero-text p {
     width: 100%;
 
-    line-height: 2.5rem;
+    line-height: 2.3rem;
     font-weight: 300;
   }
 
@@ -181,29 +156,29 @@ export default {
 }
 
 /* MD TABLET SCREEN */
-@media only screen and  (min-width: 426px)  and (max-width: 648px) {
+@media only screen and (min-width: 426px) and (max-width: 648px) {
   .hero-content {
 
-    background-color:  rgb(68, 68, 68);
-    width: 88%;
+    background-color: rgb(68, 68, 68);
+    width: 80%;
 
 
   }
 
   .hero-text h3 {
     font-size: 4.3rem;
+    
   }
 
   .hero-text h2 {
-    line-height: 3rem;
-    font-size: 2.8rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     width: 100%;
-    margin: 2.5rem auto;
-   
+    
+
   }
 
   .hero-text p {
-
     width: 98%;
   }
 }
@@ -213,28 +188,27 @@ export default {
 @media only screen and (min-width: 649px) and (max-width: 768px) {
 
   .hero-content {
-  
-    padding: 0 2rem;
-    width: 90%;
-    background-color:  rgb(167, 23, 23);
+    width: 86%;
+    background-color: rgb(167, 23, 23);
   }
+  .hero-text h3 {
 
+font-size: 5rem;
+
+}
   .hero-text h2 {
     font-size: 3.4rem;
     width: 100%;
-    margin: 2.5rem auto;
-  }
-
-  .hero-text h3 {
+    line-height: 3.5rem;
   
-    font-size: 5rem;
-
   }
+
+ 
 
 
   .hero-text p {
     line-height: 2.5rem;
- 
+
 
     width: 95%;
 
@@ -250,7 +224,7 @@ export default {
   .hero-content {
     padding: 0rem;
     width: 85%;
-    background-color:  rgb(0, 124, 124);
+    background-color: rgb(0, 124, 124);
   }
 
   .hero-text h3 {
@@ -260,6 +234,7 @@ export default {
 
   .hero-text h2 {
     font-size: 4.5rem;
+    margin: 1.5rem 0;
 
   }
 
@@ -270,4 +245,33 @@ export default {
 
 
 }
+/* 
+@media only screen and (min-width: 1024px){
+  .hero-content {
+
+ 
+    background-color: rgb(124, 0, 52);
+  }
+
+  .hero-text h3 {
+    font-size: 6.1rem;
+
+  }
+
+  .hero-text h2 {
+   
+    font-size: 4.5rem;
+    margin: 2.5rem 0;
+
+  }
+
+  .hero-text p {
+
+    width: 60%;
+
+  }
+
+
+
+} */
 </style>

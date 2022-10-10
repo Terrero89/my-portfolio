@@ -4,14 +4,14 @@
         <h3>loading....</h3>
 
     </div>
-    <div class="bg2" v-if="!isLoading" >
-      <TheNavbar></TheNavbar>
-          <TheHero></TheHero>
+    <div class="bg2" v-if="!isLoading">
+        <TheNavbar></TheNavbar>
+        <TheHero></TheHero>
         <TheAbout></TheAbout>
         <TheSkills></TheSkills>
         <Projects></Projects>
-        <Contact></Contact> 
-     
+        <Contact></Contact>
+
     </div>
 
 
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import TheNavbar from "./components/ui/TheNavbar.vue";
+import TheNavbar from "./components/layout/navigation/TheNavbar.vue"
 import TheHero from "./components/views/TheHero.vue";
 import TheAbout from "./components/views/TheAbout.vue";
 import TheSkills from "./components/views/TheSkills.vue";
@@ -68,20 +68,25 @@ export default {
 </script>
 
 <style>
-
 /* 
 
 paragraphs:  
 color: rgba(225, 244, 255, 0.7); 
-font-size: 1.58rem;
-line-height: 2.5rem;
+font-size: 1.55rem;
+line-height: 2.3rem;
 
 */
+
+/* section subtitles:
+font-size: 2.5rem;
+  color: rgb(255, 255, 255, 0.8);
+
+ */
 
 
 
 .bg {
-    
+
     z-index: 1000;
     text-align: center;
     display: flex;
@@ -112,7 +117,7 @@ line-height: 2.5rem;
 
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -122,16 +127,16 @@ html {
     background-color: #031226;
     color: white;
     font-size: 62.5%;
- 
 
-  
+
+
 
 }
 
 p {
     color: rgb(255, 255, 255);
-  
-    
+
+
 }
 
 /* Main titles H3 */
