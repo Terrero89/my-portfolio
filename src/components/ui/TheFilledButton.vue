@@ -24,7 +24,7 @@ export default {
     background: rgb(38, 125, 151);
     border: rgb(38, 125, 151);
     color: #ffffff;
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;

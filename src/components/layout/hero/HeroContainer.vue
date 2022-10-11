@@ -52,16 +52,18 @@ export default {
 
 .hero-text h3 {
   font-size: 7.5rem;
-  letter-spacing: 0.1rem;
-  opacity: 0.8;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+  color: rgba(225, 244, 255, 0.95);
 }
 
 .hero-text h2 {
   font-size: 5rem;
-  letter-spacing: 0.1rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
   line-height: 5rem;
   margin: 1.8rem 0;
-  color: rgba(225, 244, 255, 0.8);
+  color: rgba(225, 244, 255, 0.7);
   width: 70rem;
 }
 
@@ -91,7 +93,7 @@ export default {
 @media only screen and (max-width: 390px) {
   .hero-content {
     padding: 0 0.5rem;
-    background-color: rgb(59, 0, 155);
+    /* background-color: rgb(59, 0, 155); */
     width: 90%;
   }
 
@@ -125,7 +127,7 @@ export default {
     font-size: 3.1rem;
     width: 100%;
     margin: 1.5rem auto;
-    line-height: 3rem;
+    line-height: 3.5rem;
   }
 
   .hero-text p {
@@ -200,33 +202,22 @@ export default {
     width: 80%;
   }
 }
-/* 
-@media only screen and (min-width: 1024px){
-  .hero-content {
 
- 
-    background-color: rgb(124, 0, 52);
-  }
+@media only screen and (min-width: 1024px) {
+
 
   .hero-text h3 {
-    font-size: 6.1rem;
-
+    font-size: 8.2rem;
   }
 
   .hero-text h2 {
-   
-    font-size: 4.5rem;
-    margin: 2.5rem 0;
-
+    font-size: 5.5rem;
+    line-height: 6rem;
   }
 
   .hero-text p {
-
+    font-size: 1.75rem;
     width: 60%;
-
   }
-
-
-
-} */
+}
 </style>

@@ -47,6 +47,16 @@ export default {
 }
 
 
+@media only screen and (min-width: 1024px) {
+
+
+.btn {
+    padding: 17px 29px;
+}
+
+
+}
+
 /* make the buttons a little smaller on sm screen
  .hero-btn {
     padding: 16px 20px;
