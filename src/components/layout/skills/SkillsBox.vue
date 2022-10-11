@@ -150,6 +150,8 @@ export default {
   max-width: 55rem;
 
   background-color: #01152e;
+
+
 }
 
 .expertise-box:nth-child(1):hover {
@@ -194,13 +196,10 @@ export default {
 }
 
 .expertise-tech .technologies ul li {
-  /* border: 1px solid rgb(0, 255, 76); */
-  /* color: #0097bd;  */
-
+  font-family: "Inconsolata", monospace;
   color: #61dbfb;
-  font-size: 1.35rem;
-
-  margin-right: 1.25rem;
+  font-size: 1.4rem;
+  margin-right: 1.3rem;
   margin-top: 1rem;
 }
 
@@ -211,9 +210,7 @@ export default {
   line-height: 2.4rem;
 }
 
-/* expertise individually */
 
-/*  */
 
 .technologies {
   display: flex;
@@ -221,17 +218,9 @@ export default {
   margin-right: 3rem;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
 
-/**table size */
+
 
 /* @media only screen and (min-width: 425px) and (max-width: 500px) {
 } */

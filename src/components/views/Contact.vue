@@ -1,14 +1,8 @@
 <template>
   <section id="contact-section">
     <div class="contact-wrapper">
-      <section-titles
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="80"
-        data-aos-offset="0"
-        :style="{ margin: '7rem 0 0rem 0' }"
-        title="Get in touch"
-      />
+      <SectionTitles data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="80" data-aos-offset="0"
+        :style="{ margin: '0rem 0 -5rem 0' }" title="Get in touch" />
       <div class="section-wrapper">
         <ContactText>
           <SocialIcons />
@@ -21,11 +15,13 @@
 </template>
 
 <script>
+import SectionTitles from '../ui/SectionTitles.vue'
 import ContactForm from "../layout/contact/ContactForm.vue";
 import SocialIcons from "../ui/SocialIcons.vue";
 import ContactText from "../layout/contact/ContactText";
 export default {
   components: {
+    SectionTitles,
     ContactForm,
     SocialIcons,
     ContactText,
@@ -37,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-#contact-section {
+#contact-section{
   min-height: 70vh;
 }
 

@@ -28,6 +28,7 @@
                     <h3 class="message" v-if="!formIsValid">Please enter a valid email and non-empty message.
                     </h3>
                 </div>
+
                 <button @click="sendData" class="btn-fill">Submit</button>
             </form>
         </div>
@@ -36,6 +37,7 @@
 
 <script>
 // import axios from "axios"
+
 import SuccessMessage from "../../ui/SuccessMessage.vue";
 
 export default {

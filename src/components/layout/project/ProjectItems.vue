@@ -1,26 +1,17 @@
 <template>
   <div>
-    <div
-      class="project-container"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="200"
-      data-aos-offset="0"
-    >
-      <div
-        v-if="this.length % 2 === 0"
-        class="image-container"
-        uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;"
+    <div class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+      data-aos-offset="0" 
       >
+      <div v-if="this.length % 2 === 0" class="image-container"
+        uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;">
         <div class="gradient">
           <img :src="link" class="project-image" alt="project-img" />
         </div>
       </div>
 
-      <div
-        class="project-text"
-        uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;"
-      >
+      <div v-if="this.length % 2 === 0" class="project-text"
+        uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;">
         <span>{{ type }}</span>
         <h3>{{ name }}</h3>
         <p>{{ description }}</p>
@@ -32,22 +23,43 @@
         </div>
 
         <div class="buttons">
-          <TheOutlinedButton
-            style="margin-right: 1rem"
-            :link="this.web"
-            button-title="Website"
-          />
+          <TheOutlinedButton style="margin-right: 1rem" :link="this.web" button-title="Website" />
+          <TheFilledButton :link="this.github" button-title="Github" />
+        </div>
+      </div>
+      <!-- if is not even then render this one -->
+      <div v-if="this.length % 2 !== 0" class="image-container"
+        uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;">
+        <div class="gradient">
+          <img :src="link" class="project-image" alt="project-img" />
+        </div>
+      </div>
+
+      <div v-if="this.length % 2 !== 0" class="project-text"
+        uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;">
+        <span>{{ type }}</span>
+        <h3>{{ name }}</h3>
+        <p>{{ description }}</p>
+
+        <div class="tech-section">
+          <ul class="techs" v-for="stack in stacks" :key="stack.name">
+            <li>{{ stack }}</li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <TheOutlinedButton style="margin-right: 1rem" :link="this.web" button-title="Website" />
           <TheFilledButton :link="this.github" button-title="Github" />
         </div>
       </div>
 
-      <div
+      <!-- <div
         v-if="this.length % 2 !== 0"
         class="image-container"
         uk-parallax="target: #hero-img; start: 100%; end: 0%; y: -280; easing: 3; opacity: 1,0,0,0;"
       >
         <img :src="link" class="project-image" alt="project-img" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -214,9 +226,10 @@ button a {
 }
 
 .techs li {
+  font-family: 'Inconsolata', monospace;
   margin: 1rem 0;
   color: #61dbfb;
-  font-size: 1.35rem;
+  font-size: 1.4rem;
 }
 
 .tech-section {
@@ -313,8 +326,4 @@ button a {
   width: 100%;
   /* border: solid red 1px; */
 }
-
-
-
-
 </style>

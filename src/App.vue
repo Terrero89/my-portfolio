@@ -11,6 +11,7 @@
         <TheSkills></TheSkills>
         <Projects></Projects>
         <Contact></Contact>
+        <TheFooter/>
 
     </div>
 
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+    import TheFooter from "./components/views/TheFooter.vue"
 import TheNavbar from "./components/layout/navigation/TheNavbar.vue"
 import TheHero from "./components/views/TheHero.vue";
 import TheAbout from "./components/views/TheAbout.vue";
@@ -38,6 +40,7 @@ export default {
         TheSkills,
         Projects,
         Contact,
+        TheFooter
 
 
 
@@ -83,6 +86,12 @@ font-size: 2.5rem;
 
  */
 
+ /* Color to change when finished:
+ html Doc: #02383C;
+ contrast color: 
+ 
+ */
+
 
 
 .bg {
@@ -93,7 +102,7 @@ font-size: 2.5rem;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    /* animation:change; */
+ 
 }
 
 /* @keyframes change {
@@ -112,6 +121,7 @@ font-size: 2.5rem;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
+    
 
 
 
@@ -125,6 +135,8 @@ html {
 
 
     background-color: #031226;
+    /* background-color: #011d20; */
+     /* background-color: #062427; */
     color: white;
     font-size: 62.5%;
 
