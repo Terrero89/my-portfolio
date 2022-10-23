@@ -121,7 +121,6 @@ export default {
 }
 
 .buttons {
-  
   display: flex;
 }
 
@@ -134,7 +133,7 @@ export default {
   max-width: 1700px;
   overflow: hidden;
   opacity: 0.5;
-  padding: 3rem 2rem ;
+  padding: 3rem 2rem;
   margin: 8rem auto;
   display: flex;
   justify-content: space-evenly;
@@ -150,7 +149,6 @@ export default {
   width: 50rem;
   padding: 0 2rem;
   margin: 2rem 5rem;
-
 }
 
 .project-text h3 {
@@ -163,7 +161,6 @@ export default {
   font-size: 1.4rem;
   font-weight: 600;
   color: #61dbfb;
-
 }
 
 .project-text p {
@@ -267,7 +264,7 @@ export default {
 }
 
 .project-container {
-  margin: 5rem 2rem;
+  margin: 11rem 2rem;
   background-color: none;
 }
 

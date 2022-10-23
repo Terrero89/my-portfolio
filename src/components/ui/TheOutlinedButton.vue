@@ -28,6 +28,7 @@ export default {
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 100;
   
 }
 

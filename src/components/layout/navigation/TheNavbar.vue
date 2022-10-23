@@ -5,7 +5,7 @@
       :class="{ navbarOn: isScrolled, navbarOff: !isScrolled }"
     >
       <a href="#" data-aos="zoom-out" data-aos-delay="200" class="nav-logo"
-        >ST.</a
+        >ST</a
       >
       <ul class="nav-menu" :class="[{ active: menuIsVisible }]">
         <li
@@ -210,7 +210,7 @@ nav .nav-link:hover::before {
 nav .nav-logo {
   list-style: none;
   text-decoration: none;
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   font-weight: 500;
   color: none;
   z-index: 110;
@@ -220,7 +220,7 @@ nav .nav-logo {
 
 /*nav-links colors */
 nav .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: none;
   letter-spacing: 0.15rem;
@@ -330,7 +330,7 @@ ul.nav-menu {
 
   /* nav links in mobile */
   .nav-item a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2.5rem 0;
     color: rgba(255, 255, 255, 0.8);
 

@@ -112,7 +112,7 @@ span a:hover {
 
 @media only screen and (min-width: 426px) and (max-width: 536px) {
   #about .about-text {
-    width: 80%;
+    width: 90%;
     order: 2;
     /* background-color:rgb(0, 92, 77); */
     margin: 3.5rem 0;
@@ -131,7 +131,7 @@ span a:hover {
 @media only screen and (min-width: 537px) and (max-width: 610px) {
   #about .about-text {
     order: 2;
-    width: 75%;
+    width: 80%;
     /* background-color:rgb(77, 77, 77); */
     margin: 3.5rem 0;
   }

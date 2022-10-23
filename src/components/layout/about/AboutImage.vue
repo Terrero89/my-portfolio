@@ -59,7 +59,7 @@ export default {};
 @media only screen and (max-width: 768px) {
   #about .about-img {
     /* border: solid red 1px; */
-    margin: 0rem 5rem;
+    margin: 5rem 5rem;
     border-radius: 55%;
     bottom: 4rem;
   }
@@ -72,6 +72,7 @@ export default {};
     bottom: 3rem;
     height: 100%;
     border-radius: 5px;
+    
   }
 }
 </style>

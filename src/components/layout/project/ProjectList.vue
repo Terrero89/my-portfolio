@@ -45,7 +45,7 @@ export default {
           description:
             "Personal Blog where I intend to post different articles and posts about technology, and other topics. This web app also allows users to sign up, sign in, as well as post articles and blogs of their preference. The ideas was to allow users to interact with others user through the blog as well.",
           stack: ["Vue JS", "Nuxtjs", "Firebase", "Axios", "Vuex", "Jwt", "Cookies"],
-          github: "http://www.phoenixfinancial.co/",
+          github: "https://www.onlinegdb.com/edit/QUNrRnE09",
           website: "http://www.phoenixfinancial.co/",
         },
         
