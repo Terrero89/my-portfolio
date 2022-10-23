@@ -1,4 +1,5 @@
 <template>
+  <div>
   <ProjectItems
     v-for="(project, index) in projects"
     :key="project.name"
@@ -11,6 +12,7 @@
     :type="project.type"
     :length="index"
   />
+</div>
 </template>
 
 <script>

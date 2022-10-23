@@ -12,9 +12,7 @@
       </h2>
 
       <p data-aos-duration="600" data-aos="fade-up">
-        I'm a passionate <span>Front-end Developer</span> with the desire to learn,
-        improve and help build ideas. My main focus is to build performant, accessible,
-        and search optimized websites and apps.
+       A passionate <span>Front-end Developer</span> who strives in creating unique experiences that bring ideas to life with code. My main focus is to build performant, accessible SEO websites and web apps.
       </p>
     </div>
 

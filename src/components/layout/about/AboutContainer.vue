@@ -36,9 +36,10 @@ export default {
     position: relative;
     max-width: 1400px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
     text-align: left;
+
 
 }
 
