@@ -131,7 +131,7 @@
     width: 45rem;
     height: 45rem;
     position: relative;
-    /* border:solid yellow 1px; */
+  ;
   }
 }
 
@@ -244,6 +244,7 @@
 }
 
 .skills-icons {
+  /* border:solid yellow 1px; */
   width: 45rem;
   height: 45rem;
   position: relative;
@@ -256,5 +257,10 @@
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .skills-icons {
 
+margin: 4rem 0;
+}
+}
 </style>

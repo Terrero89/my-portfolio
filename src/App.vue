@@ -91,7 +91,7 @@ font-size: 2.5rem;
  contrast color: 
  
  */
-
+/* color: rgb(0, 217, 255); */
 
 
 .bg {

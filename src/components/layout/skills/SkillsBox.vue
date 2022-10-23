@@ -67,13 +67,11 @@ export default {
       skillsInfo: [
         {
           title: "Front-end",
-          text:
-            "I have plenty of experience using HMTL, CSS, And Javascript as well as UI Frameworks. I'm currently working with Vue Js ecosystem as my main stack, and progresively transitioning to React Js.   ",
+          text: "I have solid experience using HMTL, CSS, And Javascript as well as UI Frameworks. I'm currently working with Vue Js ecosystem as my main stack, and progresively transitioning to React Js. ",
         },
         {
           title: "Backend",
-          text:
-            "Although not a Backend Developer, I have gain some familiarity with these tool. I have worked on small projects where I have applied the fundamentals of each one of them. ",
+          text: "Although not a Backend Developer, I have gained some familiarity with these tool. I have worked on small projects where I have applied the fundamentals of each one of them. ",
         },
       ],
 
@@ -86,7 +84,7 @@ export default {
         "Vue Js",
         "Nuxt Js",
         "Sass",
-        "Boostrap",
+        "Bootstrap",
         "Tailwind",
       ],
       backend: [
@@ -120,15 +118,15 @@ export default {
   display: flex;
   justify-content: center;
   position: relative;
-  flex: 1 1 30.3rem;
+  flex: 1 1 30rem;
 }
 
 .skills-wrapper {
+  /* border: solid 1px red; */
   max-width: 1300px;
   padding: 1rem 3rem;
   margin: 0 auto;
 
-  /* border: solid rgb(184, 34, 139) 1px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -150,21 +148,6 @@ export default {
   max-width: 55rem;
 
   background-color: #01152e;
-
-
-}
-
-.expertise-box:nth-child(1):hover {
-  transform: scale(1.05);
-  transition: 0.4s;
-  box-shadow: 2px 0px 15px 8px rgb(77, 84, 128, 0.5);
-}
-
-.expertise-box:nth-child(2):hover {
-  overflow: hidden;
-  transform: scale(1.05);
-  transition: 0.4s;
-  box-shadow: 2px 0px 15px 8px rgb(146, 168, 22, 0.5);
 }
 
 .expertise-box h3 {
@@ -210,17 +193,11 @@ export default {
   line-height: 2.4rem;
 }
 
-
-
 .technologies {
   display: flex;
   flex-wrap: wrap;
   margin-right: 3rem;
 }
-
-
-
-
 
 /* @media only screen and (min-width: 425px) and (max-width: 500px) {
 } */
@@ -267,6 +244,25 @@ export default {
 
   .expertise-box {
     margin: 5rem 0 0 0;
+  }
+
+  .expertise-box:hover {
+    transform: scale(0);
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* .expertise-box:nth-child(1):hover {
+      transform: scale(1.05);
+      transition: 0.4s;
+      box-shadow: 2px 0px 15px 8px rgb(77, 84, 128, 0.5);
+    }
+
+    .expertise-box:nth-child(2):hover {
+      overflow: hidden;
+      transform: scale(1.05);
+      transition: 0.4s;
+      box-shadow: 2px 0px 15px 8px rgb(146, 168, 22, 0.5);
+    } */
   }
 }
 </style>

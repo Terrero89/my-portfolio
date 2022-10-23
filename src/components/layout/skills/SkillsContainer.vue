@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .skills-container {
-   
+
  
     overflow: hidden;
     margin: 0 auto;
