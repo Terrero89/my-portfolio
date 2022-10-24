@@ -20,7 +20,7 @@
       <div
         v-if="this.length % 2 === 0"
         class="project-text"
-        uk-parallax="target: #hero-img; start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;"
+        uk-parallax=" start: 130%; end: 0%; y: -250; easing: 3; opacity: 1,0,0,0;"
       >
         <span>{{ type }}</span>
         <h3>{{ name }}</h3>
@@ -149,6 +149,7 @@ export default {
   width: 50rem;
   padding: 0 2rem;
   margin: 2rem 5rem;
+  z-index: 100;
 }
 
 .project-text h3 {
@@ -168,7 +169,6 @@ export default {
   font-size: 1.55rem;
   margin: 2rem 0 2.5rem 0;
   line-height: 2.4rem;
-
   color: rgba(205, 229, 243, 0.8);
 }
 

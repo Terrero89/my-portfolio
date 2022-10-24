@@ -39,35 +39,16 @@ h3 {
 }
 
 .message {
-  width: 50%;
 
   padding: 1rem;
   position: fixed;
-  top: 6%;
-  left: auto;
-  right: auto;
-  border-radius: 15px;
+  top: 5.5%;
+
+   left:0;
+   right: 0;
+
+  border-radius: 5px;
+  
 }
 
-/* @keyframes fadedown {
-    from{
-        top: -3rem;
-        opacity: 0;
-    }
-
-    
-
-    to {
-        
-      top:0;
-        opacity: 1;
-    }
-
-} */
-
-@media only screen and (max-width: 768px) {
-  .message {
-    width: 100%;
-  }
-}
 </style>

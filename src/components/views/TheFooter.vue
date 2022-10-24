@@ -4,8 +4,8 @@
       <div class="footer-container">
         <div class="footer-text">
           <h3>
-            <span>&copy; </span>
-            <a href="https://github.com/Terrero89/"> Built by Sergio Terrero </a>
+            <span>&copy;  </span>
+            <a href="https://github.com/Terrero89/">Built by Sergio Terrero </a>
           </h3>
           <p>Front-end Web Developer 2022</p>
         </div>
@@ -48,7 +48,7 @@ span {
 
 .footer-text h3 a:hover {
   text-decoration: underline;
-  color: rgb(0, 217, 255);
+  color: rgb(0, 217, 255)
 }
 .footer-text p {
   color: rgba(205, 229, 243, 0.8);

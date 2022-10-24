@@ -1,74 +1,75 @@
 <template>
-    <div>
-  <SuccessMessage
-    v-if="isSent && !isError"
-    :class="{ success: isSent }"
-    message="Message successfully sent!"
-  />
-  <SuccessMessage
-    v-if="isError"
-    :class="{ error: isError }"
-    message="Something went wrong... please, try again in a moment"
-  />
-  <div
-    data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="180"
-  >
-    <div class="contact-form">
-      <form @submit.prevent="sendData">
-        <div class="form-control">
-          <label for="fullName"> Full Name</label>
+  <div>
+    <SuccessMessage
+      v-if="isSent && !isError"
+      class="message"
+      :class="{ success: isSent }"
+      message="Message successfully sent!"
+    />
+    <SuccessMessage
+      v-if="isError"
+      :class="{ error: isError }"
+      message="Something went wrong... please, try again in a moment"
+    />
+    <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="180"
+    >
+      <div class="contact-form">
+        <form @submit.prevent="sendData">
+          <div class="form-control">
+            <label for="fullName"> Full Name</label>
 
-          <input
-            type="text"
-            name="fullName"
-            id="fullName"
-            v-model.trim="name"
-            placeholder="Name"
-            required
-          />
-        </div>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              v-model.trim="name"
+              placeholder="Name"
+              required
+            />
+          </div>
 
-        <div class="form-control">
-          <label for="email">Email Address</label>
+          <div class="form-control">
+            <label for="email">Email Address</label>
 
-          <input
-            type="email"
-            name="email"
-            id="email"
-            v-model.trim="email"
-            placeholder="Hello@gmail.com..."
-            required
-          />
-        </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              v-model.trim="email"
+              placeholder="Hello@gmail.com..."
+              required
+            />
+          </div>
 
-        <div class="form-controls">
-          <label for="message"> Message</label>
+          <div class="form-controls">
+            <label for="message"> Message</label>
 
-          <textarea
-            name="message"
-            id=""
-            cols="40"
-            rows="10"
-            v-model.trim="message"
-            placeholder="Message..."
-            required
-          ></textarea>
-          <h3 class="message" v-if="!formIsValid">
-            Please enter a valid email and non-empty message.
-          </h3>
-        </div>
+            <textarea
+              name="message"
+              id=""
+              cols="40"
+              rows="10"
+              v-model.trim="message"
+              placeholder="Message..."
+              required
+            ></textarea>
+            <h3 class="message" v-if="!formIsValid">
+              Please enter a valid email and non-empty message.
+            </h3>
+          </div>
 
-        <button @click="sendData" class="btn-fill">Submit</button>
-      </form>
+          <button @click="sendData" class="btn-fill">Submit</button>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
-// import axios from "axios"
+
 
 import SuccessMessage from "../../ui/SuccessMessage.vue";
 
@@ -148,23 +149,19 @@ export default {
     padding: 0 2rem;
   }
 }
-
-.message {
-  color: red;
-  font-size: 1.5rem;
-  margin: 1rem 0;
-}
-
 .error {
   background-color: rgb(163, 0, 0);
+
 }
 
 .success {
   background-color: rgb(3, 122, 116);
+
+
 }
 
 .btn-fill {
-    cursor: pointer;
+  cursor: pointer;
   padding: 11px 30px;
   background: #00657e;
   color: rgb(255, 255, 255);

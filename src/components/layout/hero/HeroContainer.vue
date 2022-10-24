@@ -12,7 +12,9 @@
       </h2>
 
       <p data-aos-duration="600" data-aos="fade-up">
-       A passionate <span>Front-end Developer</span> who strives in creating unique experiences that bring ideas to life with code. My main focus is to build performant, accessible SEO websites and web apps.
+        A passionate <span>Front-end Developer</span> who strives in creating
+        unique experiences that bring ideas to life with code. My main focus is
+        to build performant, accessible SEO websites and web apps for the web.
       </p>
     </div>
 
@@ -202,8 +204,6 @@ export default {
 }
 
 @media only screen and (min-width: 1024px) {
-
-
   .hero-text h3 {
     font-size: 8.2rem;
   }

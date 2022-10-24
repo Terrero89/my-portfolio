@@ -64,13 +64,11 @@ span a:hover {
 }
 
 #about .about-text {
-  /* border: solid rgb(0, 255, 13) 1px; */
+  /* border: solid red 1px; */
   padding: 0 1rem;
 }
 
 .about-text p {
-  /* border: solid red 1px; */
-
   color: rgba(205, 229, 243, 0.8);
   font-size: 1.55rem;
   line-height: 2.5rem;
@@ -83,7 +81,6 @@ span a:hover {
     order: 2;
     width: 90%;
     margin: 3.5rem 0;
-    /* background-color:rgb(21, 0, 95); */
   }
 
   #about .about-text p {
@@ -97,7 +94,6 @@ span a:hover {
     order: 2;
     width: 90%;
     margin: 3.5rem 0;
-    /* background-color:rgb(105, 39, 0); */
   }
 
   #about .about-text p {
@@ -114,7 +110,7 @@ span a:hover {
   #about .about-text {
     width: 90%;
     order: 2;
-    /* background-color:rgb(0, 92, 77); */
+
     margin: 3.5rem 0;
   }
 
@@ -132,7 +128,7 @@ span a:hover {
   #about .about-text {
     order: 2;
     width: 80%;
-    /* background-color:rgb(77, 77, 77); */
+
     margin: 3.5rem 0;
   }
 
@@ -152,7 +148,7 @@ span a:hover {
 
     width: 65%;
     margin: 1rem 0;
-    /* background-color:rgb(90, 75, 75); */
+
     margin: 3.5rem 0;
   }
 
@@ -169,7 +165,6 @@ span a:hover {
   #about .about-text {
     width: 35%;
     margin: 1rem 0;
-    /* background-color:rgb(95, 0, 0); */
   }
 
   #about .about-header h3 {
@@ -180,9 +175,7 @@ span a:hover {
 @media only screen and (min-width: 1025px) {
   #about .about-text {
     width: 35%;
-    padding: 0 2rem;
-
-    /* background-color:rgb(95, 0, 0); */
+    padding: 0 1rem;
   }
 }
 </style>
