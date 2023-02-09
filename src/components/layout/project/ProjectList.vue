@@ -53,8 +53,8 @@ export default {
             "Jwt",
             "Cookies",
           ],
-          github: "https://www.onlinegdb.com/edit/QUNrRnE09",
-          website: "http://www.phoenixfinancial.co/",
+          github: "https://github.com/Terrero89/Blog",
+          website: "https://sergioterreroblog.netlify.app",
         },
            {
           type: "Personal Project",
