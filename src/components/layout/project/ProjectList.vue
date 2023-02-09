@@ -56,6 +56,16 @@ export default {
           github: "https://www.onlinegdb.com/edit/QUNrRnE09",
           website: "http://www.phoenixfinancial.co/",
         },
+           {
+          type: "Personal Project",
+          name: "Finance Tracker UI",
+          link: require("../../../assets/images/financetracker2023.png"),
+          description:
+            "Simple React.Js practice application UI that displays information entered for finance tracking purposes. At this time application displays entered information, filter by month and year as a way to show features of the application. ",
+          stack: ["React Js"],
+          github: "https://github.com/Terrero89/react_project_practice",
+          website: "https://financetracker2023.netlify.app/",
+        },
       ],
     };
   },

@@ -4,7 +4,7 @@
             data-aos-offset="0">
             <h3>Have an idea in mind?</h3>
             <p>
-                My inbox inbox is always open for questions, inquiries or to talk about a project or technology
+                My inbox is always open for questions, inquiries or to talk about a project or technology
                 in general. I will get back to you as soon as I can. also, follow me on social media.
             </p>
 
