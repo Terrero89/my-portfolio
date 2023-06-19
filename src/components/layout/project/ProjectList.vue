@@ -27,6 +27,16 @@ export default {
       linking: require,
 
       projects: [
+            {
+          type: "Personal Project",
+          name: "Foodie App",
+          link: require("../../../assets/images/foodieApp.png"),
+          description:
+            "Cross platform E-commerce web application built with react. You can order, save,delete items from the cart and much more.",
+          stack: ["React", "Context Api", "Hooks", "Firebase"],
+          github: "https://github.com/Terrero89/Order_App_Project",
+          website: "https://foodieapp2023.netlify.app",
+        },
         {
           type: "Personal Project",
           name: "Find a Mentor",
