@@ -26,7 +26,7 @@
         <div class="expertise-text">
           <div class="expertise-title">
             <h3 v-if="skills.title === 'Front-end'">Front-end Tools</h3>
-
+            <h3 v-else-if="skills.title === 'Data Analysis'">Data Analysis</h3>
             <h3 v-else>Backend-end Tools</h3>
           </div>
           <p>
@@ -84,7 +84,7 @@ export default {
 
         {
           title: "Data Analysis",
-          text: "Worked on personal and school projects using my statical and analytical skills to create visually and  descriptive data analysis",
+          text: "Worked on personal and school projects using my statical and analytical skills to create visually and  descriptive data analysis.",
         },
       ],
 

@@ -77,7 +77,7 @@
 
       <img
       alt="Golanguage Image"
-      class="icon go"
+      class="icon c"
       data-aos-duration="800"
       src= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
     />
