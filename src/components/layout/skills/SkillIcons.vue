@@ -18,10 +18,16 @@
     />
 
     <!-- tailwind -->
-    <img
+    <!-- <img
       alt="Tailwind Image"
       class="icon tailwind"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+    /> -->
+
+    <img
+      alt="Pandas Image"
+      class="icon tailwind"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
     />
 
     <!-- REACT -->
@@ -62,12 +68,21 @@
 
     <!-- c language -->
 
-    <img
+    <!-- <img
       alt="C language Image"
       class="icon c"
       data-aos-duration="800"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+    /> -->
+
+      <img
+      alt="Golanguage Image"
+      class="icon go"
+      data-aos-duration="800"
+      src= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
     />
+
+   
 
     <!-- express -->
 

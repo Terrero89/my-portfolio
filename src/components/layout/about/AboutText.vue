@@ -8,16 +8,16 @@
       <h3>Who am I?</h3>
     </div>
     <p>
-      Hello again! My name is Sergio Terrero, and I am an information technology
-      senior student at
+      Hello again! My name is Sergio Terrero, and I am recent grad in information technology
+      with a concentration in Computer Science from the.
       <span
         ><a href="https://uml.umassonline.net/"
           >University Of Massachusetts Lowell</a
         >
-        with a concentration in Computer Science.
+       
       </span>
       I'm a driven analytical problem solver with the willingness to
-      continuously learn and keep up with new technologies.
+      continuously learn and keep up with new technologies. My experience include Analysing Data as well as Developing web applications.
     </p>
 
     <p>
@@ -26,16 +26,16 @@
         ><a href="https://www.utesa.edu/home/"
           >Santiago University of Technology</a
         > </span
-      >. What excites me the most about software development are the challenges,
+      >. What excites me the most about technology are the challenges,
       the creativity, and out-of-the-box thinking needed to succeed that no
       other field allows to develop.
     </p>
 
-    <p>
+    <!-- <p>
       When i'm not coding I would be doing outdoor activities like hiking,
       trailing and road trips. Other times i'm just doing research about new
       trends, technologies or reading a book to learn something new.
-    </p>
+    </p> -->
   </div>
 </template>
 

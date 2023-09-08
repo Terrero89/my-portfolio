@@ -49,6 +49,14 @@
               </li>
             </ul>
           </div>
+
+          <div class="technologies" v-if="skills.title === 'Data Analysis'">
+            <ul v-for="tech in dataAnalytics" :key="tech.name">
+              <li>
+                {{ tech }}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +79,12 @@ export default {
         },
         {
           title: "Backend",
-          text: "Although not a Backend Developer, I have gained some familiarity with these tool. I have worked on small projects where I have applied the fundamentals of each one of them. ",
+          text: "I have gained sexperience with these tools, spcially with Go for server side applications. I have worked on projects where I have applied the fundamentals of each one of the technologies below. ",
+        },
+
+        {
+          title: "Data Analysis",
+          text: "Worked on personal and school projects using my statical and analytical skills to create visually and  descriptive data analysis",
         },
       ],
 
@@ -88,6 +101,7 @@ export default {
         "Tailwind",
       ],
       backend: [
+        "Go",
         "Python",
         "Node Js",
         "Express Js",
@@ -96,8 +110,8 @@ export default {
         "Mongoose",
         "MongoDB",
         "Rest Api",
-        "C",
       ],
+      dataAnalytics: ["Python", "Pandas", "Seaborn", "Matplotlib"],
 
       fontSize: "2rem",
     };
