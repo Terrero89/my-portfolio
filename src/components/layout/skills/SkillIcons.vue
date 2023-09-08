@@ -77,9 +77,9 @@
 
       <img
       alt="Golanguage Image"
-      class="icon c"
+      class="icon go"
       data-aos-duration="800"
-      src= "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
+     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
     />
 
    
@@ -150,7 +150,7 @@
   }
 }
 
-.c {
+.go {
   left: 45%;
   bottom: 0%;
 }
