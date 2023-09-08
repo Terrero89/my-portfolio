@@ -162,7 +162,7 @@
 }
 
 .tailwind {
-  height: 12rem;
+  height: 10rem;
   left: 14%;
   top: 23%;
 }
