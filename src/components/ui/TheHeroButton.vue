@@ -8,11 +8,7 @@
 <script>
 export default {
     props: ['link', 'buttonTitle'],
-    data() {
-        return {
-
-        }
-    }
+  
 }
 </script>
 
@@ -41,9 +37,9 @@ export default {
 .btn:hover {
     /* background: #46a0b6; */
     background: #46a0b6;
-    ;
+    border: none;
     color: white;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 

@@ -55,27 +55,23 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import SkillIcons from "./SkillIcons.vue";
+import {ref} from 'vue'
 
-export default {
-  components: {
-    SkillIcons,
-  },
-  data() {
-    return {
-      skillsInfo: [
+
+const skillsInfo = ref([
         {
           title: "Front-end",
           text: "I have solid experience using HMTL, CSS, And Javascript as well as UI Frameworks. I'm currently working with Vue Js ecosystem as my main stack, and progresively transitioning to React Js. ",
         },
         {
           title: "Backend",
-          text: "Although not a Backend Developer, I have gained some familiarity with these tool. I have worked on small projects where I have applied the fundamentals of each one of them. ",
+          text: "Although not a Backend Developer, I have gained some familiarity with these tools. I have worked on projects where I have applied the fundamentals of each one of them. ",
         },
-      ],
+      ])
 
-      frontend: [
+      const frontend = ref([
         "Html",
         "Css",
         "Javascript",
@@ -86,23 +82,18 @@ export default {
         "Sass",
         "Bootstrap",
         "Tailwind",
-      ],
-      backend: [
-        "Python",
+
+      ])
+      const backend = ref([
         "Node Js",
         "Express Js",
-        "EJS",
-        "Firebase",
         "Mongoose",
+        "Firebase",
         "MongoDB",
-        "Rest Api",
-        "C",
-      ],
+        "Go"
 
-      fontSize: "2rem",
-    };
-  },
-};
+      ])
+
 </script>
 
 <style scoped>

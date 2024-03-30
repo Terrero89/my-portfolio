@@ -15,23 +15,13 @@
     </div>
 </template>
 
-<script>
+<script setup>
 
 import SkillsBox from "./SkillsBox.vue"
 import SectionTitles from '../../ui/SectionTitles.vue'
-export default {
-    components: {
-        SectionTitles,
-        SkillsBox
-    },
 
-    data() {
-        return {
-            
-        }
-    }
 
-};
+
 </script>
 
 <style scoped>

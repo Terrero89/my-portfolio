@@ -64,10 +64,10 @@
 
     <img
       alt="C language Image"
-      class="icon c"
+      class="icon go"
       data-aos-duration="800"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-    />
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+  
 
     <!-- express -->
 
@@ -96,17 +96,19 @@
     <img
       alt="Firebase Image"
       class="icon firebase"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
-    />
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
+
+
 
     <img
-      alt="Python Image"
-      class="icon python"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-    />
+      alt="golang Image"
+      class="icon typescript"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+
+
 
     <img
-      alt="image"
+      alt="Bootstrap image"
       class="icon bootstrap"
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg"
     />
@@ -128,14 +130,14 @@
     height: 3rem;
   }
   .skills-icons {
-    width: 45rem;
+    max-width: 45rem;
     height: 45rem;
     position: relative;
   ;
   }
 }
 
-.c {
+.go {
   left: 45%;
   bottom: 0%;
 }
@@ -210,10 +212,10 @@
   top: 30%;
 }
 
-.python {
-  height: 6rem;
-  left: 72%;
-  bottom: 15%;
+.typescript {
+  height: 5rem;
+  left: 76%;
+  bottom: 17%;
 }
 
 .express {
@@ -245,7 +247,7 @@
 
 .skills-icons {
   /* border:solid yellow 1px; */
-  width: 45rem;
+  width: 50rem;
   height: 45rem;
   position: relative;
   /* border:solid yellow 1px; */

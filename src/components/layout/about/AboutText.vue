@@ -9,7 +9,7 @@
     </div>
     <p>
       Hello again! My name is Sergio Terrero, and I am an information technology
-      senior student at
+      graduate from the
       <span
         ><a href="https://uml.umassonline.net/"
           >University Of Massachusetts Lowell</a
@@ -17,7 +17,7 @@
         with a concentration in Computer Science.
       </span>
       I'm a driven analytical problem solver with the willingness to
-      continuously learn and keep up with new technologies.
+      continuously learn and keep up with new technologies as needed.
     </p>
 
     <p>
@@ -32,15 +32,15 @@
     </p>
 
     <p>
-      When i'm not coding I would be doing outdoor activities like hiking,
+      When i'm not coding I may be doing outdoor activities like hiking,
       trailing and road trips. Other times i'm just doing research about new
-      trends, technologies or reading a book to learn something new.
+      trends, technologies or reading a book to learn something new or to update my knowledge.
     </p>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+
 </script>
 
 <style scoped>
