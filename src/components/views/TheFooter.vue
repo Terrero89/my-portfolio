@@ -7,7 +7,7 @@
             <span>&copy;  </span>
             <a href="https://github.com/Terrero89/">Built by Sergio Terrero </a>
           </h3>
-          <p>Front-end Web Developer 2022</p>
+          <p>Front-end Web Developer 2024</p>
         </div>
       </div>
     </footer>
