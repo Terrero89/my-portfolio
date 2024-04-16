@@ -20,7 +20,7 @@
 
     <TheHeroButton
       button-title="Virtual Resume"
-      link="https://sergiovirtualresume.netlify.app"
+      link="https://sergiotvirtualresume.netlify.app/"
     />
   </div>
 </template>

@@ -28,7 +28,6 @@ import TheNavbar from "./components/layout/navigation/TheNavbar.vue";
 import TheHero from "./components/views/TheHero.vue";
 import TheAbout from "./components/views/TheAbout.vue";
 import TheSkills from "./components/views/TheSkills.vue";
-
 import Contact from "./components/views/Contact.vue";
 import Projects from "./components/views/TheProjects.vue";
 
